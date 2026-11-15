@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>파워냅 뇌건강센터 | 수면의 가치를 높이는 AI 뇌과학 기술 POWER NAP</title>
+<meta name="description" content="EEG 뇌파와 실시간 뉴로피드백으로 수면·명상·집중·자기조절을 잇는 뇌건강 브랜드, 파워냅(POWER NAP). 서울 서초구 우면동, 1:1 정밀 뇌파 검사와 30분 AI 뇌훈련 체험 3만 원. 사전 예약제.">
+<meta name="theme-color" content="#071532">
+<meta property="og:type" content="website">
+<meta property="og:title" content="파워냅 뇌건강센터 | 수면의 가치를 높이는 AI 뇌과학 기술">
+<meta property="og:description" content="매일 30분 우리 가족 뇌건강 관리. 1:1 정밀 뇌파 검사 + 30분 AI 뇌훈련 체험 3만 원. 서울 서초구 우면종합상가 702호.">
+<meta property="og:image" content="assets/hero-device.jpg">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<style>
+@font-face{
+  font-family:"Noto Sans KR";src:url("assets/fonts/NotoSansKR-var.woff2") format("woff2");
+  font-weight:100 900;font-style:normal;font-display:swap;
+}
+@font-face{
+  font-family:"Gowun Batang";src:url("assets/fonts/GowunBatang-Regular.woff2") format("woff2");
+  font-weight:400;font-style:normal;font-display:swap;
+}
+@font-face{
+  font-family:"Gowun Batang";src:url("assets/fonts/GowunBatang-Bold.woff2") format("woff2");
+  font-weight:700;font-style:normal;font-display:swap;
+}
+:root{
+  --navy:#071532;--navy2:#0d2247;--cream:#fbf0df;--sand:#efd6b5;
+  --gold:#c99231;--gold-lt:#e8b555;--green:#07813e;--ink:#121826;
+  --white:#fffdf8;--glow:#5b9cff;
+  --serif:"Gowun Batang",'Noto Serif KR',serif;
+  --sans:"Noto Sans KR",'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--white);color:var(--ink);font-family:var(--sans);font-weight:400;line-height:1.7;word-break:keep-all;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{max-width:100%}
+.skip-link{position:absolute;left:-9999px;top:0;z-index:100;background:#fffdf8;color:#071532;padding:12px 20px;font-weight:800;font-size:14px;border-radius:0 0 6px 0}
+.skip-link:focus{left:0}
+:focus-visible{outline:3px solid #f0c36b;outline-offset:3px;border-radius:2px}
+.hero :focus-visible,.filmstrip :focus-visible,.signature :focus-visible,.contact :focus-visible,footer :focus-visible{outline-color:#ffd98a}
+
+/* ---------- 공통 ---------- */
+.eyebrow{font-size:12px;letter-spacing:.26em;font-weight:800;color:#e8b555;margin:0 0 24px}
+.eyebrow.dark{color:#7f5716}
+.section-label{font-size:11px;letter-spacing:.34em;font-weight:800;color:#7f5716;margin:0 0 25px}
+.button{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:54px;padding:0 26px;border-radius:4px;font-size:14px;font-weight:800;letter-spacing:-.02em;font-family:inherit;border:0;cursor:pointer;transition:.25s transform,.25s background,.25s border-color}
+.button:hover{transform:translateY(-2px)}
+.button-primary{background:linear-gradient(135deg,#dca749,#b77b20);color:#071532}
+.button-ghost{border:1px solid rgba(255,255,255,.28);color:#fff}
+.button-gold{background:#d6a148;color:#07142e}
+.button-outline{border:1px solid rgba(255,255,255,.35);color:#fff}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .75s ease,transform .75s ease}
+.reveal.visible{opacity:1;transform:none}
+
+/* ---------- 상단 ---------- */
+.topbar{height:84px;padding:0 clamp(22px,5vw,76px);display:flex;align-items:center;justify-content:space-between;gap:20px;position:absolute;top:0;left:0;z-index:20;width:100%;color:#fff}
+.brand{display:flex;align-items:center;gap:11px;flex:none}
+.brand-logo{height:38px;width:auto;display:block}
+.top-nav{display:flex;gap:28px;font-size:13px;font-weight:600;color:#c9d3e4}
+.top-nav a:hover{color:#f0c36b}
+.top-right{display:flex;align-items:center;gap:16px}
+.top-cta{border:1px solid rgba(255,255,255,.55);border-radius:99px;padding:10px 20px;font-size:13px;font-weight:700;white-space:nowrap}
+.top-cta:hover{background:rgba(255,255,255,.1)}
+
+/* ---------- 히어로 ---------- */
+.hero{min-height:900px;position:relative;overflow:hidden;display:grid;grid-template-columns:minmax(0,1fr) minmax(400px,.88fr);align-items:center;gap:20px;padding:132px clamp(22px,7vw,110px) 90px;
+  background:
+    radial-gradient(circle at 76% 38%,#22406f 0,rgba(30,62,112,.45) 18%,transparent 40%),
+    linear-gradient(125deg,#050d21 0%,#091936 52%,#10264e 100%);
+  color:#fff}
+.hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:64px 64px;-webkit-mask-image:linear-gradient(to right,#000,transparent 78%);mask-image:linear-gradient(to right,#000,transparent 78%);pointer-events:none}
+.hero-copy{position:relative;z-index:2;max-width:720px}
+.hero h1{font-family:var(--serif);font-weight:700;font-size:clamp(44px,5.1vw,78px);line-height:1.2;letter-spacing:-.055em;margin:0 0 26px}
+.hero h1 em{font-style:normal;color:#f0c36b;position:relative;white-space:nowrap}
+.hero h1 em:after{content:"";position:absolute;height:8px;left:0;right:0;bottom:4px;background:#11804a;opacity:.55;z-index:-1}
+.hero-lead{font-size:clamp(16px,1.6vw,21px);line-height:1.85;color:#d9dfeb;margin:0 0 34px;max-width:560px;font-weight:400}
+.hero-lead strong{color:#fff;font-weight:700}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.spec-pills{display:flex;gap:26px;margin-top:44px;color:#9ca9bd;font-size:11px;line-height:1.5}
+.spec-pills span{padding-left:16px;border-left:1px solid rgba(255,255,255,.2)}
+.spec-pills b{display:block;color:#fff;font-size:16px;margin-bottom:4px;font-weight:700}
+.hero-visual{position:relative;z-index:3;height:min(72vh,700px);display:flex;justify-content:center;align-items:center}
+.halo{position:absolute;width:76%;aspect-ratio:1;border:1px solid rgba(228,180,91,.26);border-radius:50%;box-shadow:0 0 0 45px rgba(255,255,255,.018),0 0 0 90px rgba(255,255,255,.012),0 0 120px rgba(91,156,255,.18) inset}
+.device-window{position:relative;width:min(80%,430px);border-radius:8px;overflow:hidden;box-shadow:0 38px 60px rgba(0,0,0,.55);transform:rotate(1.2deg)}
+.device-window img{width:100%;height:auto;display:block}
+.seal{position:absolute;right:0;bottom:6%;width:120px;height:120px;border-radius:50%;overflow:hidden;border:2px solid #d6a43e;box-shadow:0 14px 34px rgba(0,0,0,.45);background:#071532}
+.seal img{width:100%;height:100%;object-fit:cover;display:block}
+.float-card{position:absolute;left:-2%;top:9%;display:flex;flex-direction:column;gap:2px;background:rgba(255,253,248,.96);color:#4d2e1d;padding:16px 22px;border-radius:3px;box-shadow:0 12px 35px rgba(0,0,0,.25);transform:rotate(-6deg);font-family:var(--serif)}
+.float-card small{font-size:12px;letter-spacing:.02em;color:#7a6238}
+.float-card strong{font-size:22px;line-height:1.35}
+.scroll-cue{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);z-index:4;font-size:9px;letter-spacing:.3em;color:#8390a5;display:flex;flex-direction:column;align-items:center;gap:9px}
+.scroll-cue i{height:38px;width:1px;background:linear-gradient(#dba846,transparent)}
+
+/* ---------- 선언 ---------- */
+.manifesto{text-align:center;padding:130px 24px;background:var(--white)}
+.manifesto-kicker{font-family:var(--serif);color:#72614e;font-size:18px;margin:0}
+.manifesto h2{font-family:var(--serif);font-size:clamp(36px,5vw,68px);line-height:1.3;letter-spacing:-.06em;margin:20px 0 28px;font-weight:700}
+.manifesto h2 span{color:#0c7543}
+.manifesto-body{color:#69645d;line-height:2;font-size:17px;max-width:720px;margin:0 auto}
+
+/* ---------- 3가지 기준 ---------- */
+.value-section{padding:120px clamp(22px,7vw,110px);background:#f2e6d3;display:grid;grid-template-columns:.86fr 1.7fr;gap:60px;align-items:end}
+.value-intro h2{font-family:var(--serif);font-size:clamp(30px,3vw,44px);line-height:1.32;letter-spacing:-.055em;margin:0 0 24px;font-weight:700}
+.value-intro>p:last-child{color:#6f665a;line-height:1.85;margin:0;font-size:15.5px}
+.value-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.value-card{min-height:360px;background:rgba(255,255,255,.7);padding:30px;display:flex;flex-direction:column;border:1px solid rgba(134,98,45,.12)}
+.value-card.featured{background:#0a1b3c;color:#fff;transform:translateY(-30px);box-shadow:0 24px 50px rgba(23,31,48,.18);border-color:#0a1b3c}
+.value-card .num{font-size:11px;letter-spacing:.2em;color:#7f5716;font-weight:700}
+.value-card .icon{font-size:38px;color:#0b7942;margin:auto 0 26px;line-height:1}
+.value-card.featured .icon{color:#e2ad4b}
+.value-card h3{font-family:var(--serif);font-size:27px;margin:0 0 14px;font-weight:700;letter-spacing:-.03em}
+.value-card p{font-size:14px;line-height:1.85;color:#6f665a;margin:0}
+.value-card.featured p{color:#b7c0cf}
+
+/* ---------- 원리 ---------- */
+.principle{background:var(--white);padding:120px clamp(22px,7vw,110px);border-top:1px solid #ecdfc9}
+.principle-head{max-width:780px;margin:0 auto 54px;text-align:center}
+.principle-head h2{font-family:var(--serif);font-size:clamp(32px,4vw,54px);line-height:1.28;letter-spacing:-.055em;margin:0 0 22px;font-weight:700}
+.principle-lead{color:#5f594f;line-height:2;font-size:16px;margin:0}
+.principle-lead strong{color:#0b6b3d;font-weight:700}
+.flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:16px;align-items:stretch;max-width:1080px;margin:0 auto}
+.flow-item{background:#f7efe1;border:1px solid #e4d3b8;padding:30px 26px;display:flex;flex-direction:column}
+.flow-item.accent{background:#0a1b3c;border-color:#0a1b3c;color:#fff}
+.flow-tag{font-size:10px;letter-spacing:.24em;font-weight:800;color:#7f5716;margin:0 0 14px}
+.flow-item.accent .flow-tag{color:#e2ad4b}
+.flow-item h3{font-family:var(--serif);font-size:23px;margin:0 0 12px;font-weight:700;letter-spacing:-.03em}
+.flow-item p{margin:0;font-size:14px;line-height:1.85;color:#6b6459}
+.flow-item.accent p{color:#b7c0cf}
+.flow-plus,.flow-eq{display:grid;place-items:center;font-size:24px;color:#b08a3e;font-weight:700}
+.programs{margin:26px auto 0;max-width:1080px;background:#f2e6d3;border-left:4px solid #0b6b3d;padding:26px 28px}
+.programs-label{margin:0 0 14px;font-size:10px;letter-spacing:.22em;font-weight:800;color:#7f5716}
+.programs-list{display:grid;grid-template-columns:repeat(3,1fr);gap:10px 22px;margin:0;padding:0;list-style:none}
+.programs-list li{font-size:14.5px;color:#3f3a33;line-height:1.8;padding-left:20px;position:relative}
+.programs-list li:before{content:counter(list-item,decimal-leading-zero);position:absolute;left:0;top:0;font-size:11px;color:#a3722a;font-weight:800}
+.principle-note{max-width:1080px;margin:22px auto 0;font-size:12.5px;line-height:1.95;color:#6b6459}
+.principle-slide{max-width:980px;margin:0 auto 44px;background:#fff6e8;padding:12px;border:1px solid #e6d3b6;box-shadow:0 20px 44px rgba(23,31,48,.10)}
+.principle-slide img{display:block;width:100%;height:auto}
+.principle-slide figcaption{margin:10px 2px 0;font-size:12px;letter-spacing:.04em;color:#7f5716;font-weight:700;text-align:center}
+
+/* ---------- 체험 4단계 ---------- */
+.steps{background:linear-gradient(125deg,#061228,#0d2247 55%,#143156);color:#fff;padding:110px clamp(22px,7vw,110px);display:grid;grid-template-columns:.68fr 1fr;gap:clamp(36px,6vw,80px);align-items:center}
+.steps-art{justify-self:center;width:min(100%,440px)}
+.steps-frame{margin:0;background:#fff0dc;padding:12px;box-shadow:0 34px 60px rgba(0,0,0,.45);transform:rotate(-1.5deg)}
+.steps-frame img{display:block;width:100%;height:auto}
+.steps-copy{max-width:570px}
+.steps-copy h2{font-family:var(--serif);font-size:clamp(30px,3.4vw,46px);line-height:1.3;letter-spacing:-.055em;margin:0 0 18px;font-weight:700}
+.steps-copy>p:not(.eyebrow):not(.step-note){color:#b7c1d3;font-size:15.5px;line-height:1.95;margin:0}
+.step-list{list-style:none;margin:32px 0 0;padding:0;border-top:1px solid rgba(255,255,255,.14)}
+.step-list li{display:grid;grid-template-columns:40px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.12);align-items:start}
+.step-list .num{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;border:1px solid rgba(232,181,85,.55);color:#f0c36b;font-size:13px;font-weight:800;font-family:var(--serif);margin-top:1px}
+.step-list h3{font-family:var(--serif);font-size:19px;margin:0 0 4px;font-weight:700;letter-spacing:-.02em}
+.step-list p{margin:0;font-size:13.5px;line-height:1.8;color:#a9b6cc}
+.step-note{margin:18px 0 0;font-size:11.5px;line-height:1.8;color:#8fa0bd}
+
+/* ---------- 영상 ---------- */
+.filmstrip{background:linear-gradient(125deg,#061228,#0d2247);color:#fff;padding:110px clamp(22px,7vw,110px);display:grid;grid-template-columns:1fr auto;gap:clamp(36px,6vw,90px);align-items:center}
+.film-copy{max-width:540px}
+.film-copy h2{font-family:var(--serif);font-size:clamp(32px,3.8vw,50px);line-height:1.28;letter-spacing:-.055em;margin:0 0 20px;font-weight:700}
+.film-copy>p:not(.eyebrow){color:#b7c1d3;font-size:16px;line-height:1.95;margin:0 0 28px}
+.film-chapters{list-style:none;margin:0;padding:0;border-top:1px solid rgba(255,255,255,.14)}
+.film-chapters li{padding:13px 0 13px 26px;border-bottom:1px solid rgba(255,255,255,.1);font-size:14.5px;color:#d5dced;position:relative}
+.film-chapters li:before{content:"▸";position:absolute;left:0;color:#e8b555;font-size:12px}
+.film-player{justify-self:center;width:min(100%,320px)}
+.film-player video{display:block;width:100%;height:auto;border-radius:6px;background:#000;box-shadow:0 30px 60px rgba(0,0,0,.45)}
+.film-note{margin:14px 0 0;text-align:center;font-size:11.5px;letter-spacing:.04em;color:#8fa0bd;line-height:1.7}
+
+/* ---------- 센터 ---------- */
+.signature{background:#081735;color:#fff;display:grid;grid-template-columns:1fr 1fr;align-items:center;min-height:780px}
+.signature-art{height:100%;display:grid;place-items:center;padding:70px clamp(24px,5vw,60px);background:radial-gradient(circle,#203966 0%,#10254d 34%,transparent 66%)}
+.figure-stack{position:relative;width:min(100%,390px)}
+.official-frame{width:min(100%,430px);padding:13px;background:#fff0dc;box-shadow:0 34px 60px rgba(0,0,0,.45);transform:rotate(-2deg)}
+.figure-stack .official-frame{width:100%;margin:0}
+.official-frame img{display:block;width:100%;height:auto}
+.inset-frame{position:absolute;left:-9%;bottom:-9%;width:40%;margin:0;background:#fff0dc;padding:8px;box-shadow:0 20px 40px rgba(0,0,0,.5);transform:rotate(3deg)}
+.inset-frame img{display:block;width:100%;height:auto}
+.signature-copy{padding:90px clamp(30px,6vw,90px) 90px 10px}
+.signature-copy h2{font-family:var(--serif);font-size:clamp(32px,3.7vw,50px);line-height:1.3;letter-spacing:-.055em;margin:0 0 24px;font-weight:700}
+.signature-copy>p:not(.eyebrow){color:#b7c1d3;font-size:16px;line-height:2;margin:0}
+.facts{margin:38px 0 0;border-top:1px solid rgba(255,255,255,.15);padding:0}
+.facts div{display:grid;grid-template-columns:86px 1fr;gap:14px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+.facts dt{font-size:12px;color:#8290a8;margin:0}
+.facts dd{margin:0;font-size:14.5px;font-weight:600;line-height:1.65}
+.facts dd a{color:#f2bd52}
+
+/* ---------- 대상별 ---------- */
+.audience{background:#f2e6d3;padding:120px clamp(22px,7vw,110px)}
+.audience-head{margin-bottom:50px;max-width:660px}
+.audience-head h2{font-family:var(--serif);font-size:clamp(32px,3.9vw,54px);line-height:1.3;letter-spacing:-.055em;margin:0 0 20px;font-weight:700}
+.audience-head>p:last-child{margin:0;color:#6f665a;line-height:1.9;font-size:16px}
+.audience-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.aud-card{background:var(--white);border:1px solid rgba(134,98,45,.16);padding:32px clamp(22px,3vw,38px);display:flex;flex-direction:column}
+.aud-tag{margin:0 0 16px;padding-bottom:14px;border-bottom:1px solid #e7dac4;font-size:10px;letter-spacing:.22em;font-weight:800;color:#7f5716}
+.aud-card h3{font-family:var(--serif);font-size:25px;margin:0 0 13px;color:#0a1b3c;font-weight:700;letter-spacing:-.03em}
+.aud-card>p:not(.aud-tag):not(.aud-note){margin:0;font-size:14.5px;line-height:1.95;color:#5f594f}
+.aud-note{margin:auto 0 0;padding-top:16px;font-size:12px;line-height:1.75;color:#8f2f1c}
+.aud-card>p:not(.aud-tag)+.aud-note{margin-top:18px}
+.audience-slide{margin:26px 0 0;background:#fffdf8;border:1px solid rgba(134,98,45,.16);padding:12px;box-shadow:0 18px 40px rgba(23,31,48,.08)}
+.audience-slide img{display:block;width:100%;height:auto}
+.audience-slide figcaption{margin:10px 2px 0;font-size:12px;letter-spacing:.04em;color:#7f5716;font-weight:700}
+
+/* ---------- 실제 모습 ---------- */
+.shots{background:var(--white);padding:110px clamp(22px,7vw,110px)}
+.shots-head{margin-bottom:44px;max-width:660px}
+.shots-head h2{font-family:var(--serif);font-size:clamp(32px,3.8vw,52px);letter-spacing:-.055em;margin:0 0 18px;font-weight:700;line-height:1.3}
+.shots-head>p:last-child{margin:0;color:#6f665a;line-height:1.9;font-size:15.5px}
+.shots-wide{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.shot-wide{margin:0;background:#f7efe1;border:1px solid rgba(134,98,45,.16);padding:10px}
+.shot-wide img{display:block;width:100%;height:auto}
+.shot-wide figcaption{margin-top:10px;font-size:12px;letter-spacing:.04em;color:#7f5716;font-weight:700}
+.shots-single{max-width:980px;margin:14px auto;background:#f7efe1;border:1px solid rgba(134,98,45,.16);padding:10px}
+.shots-single img{display:block;width:100%;height:auto}
+.shots-single figcaption{margin-top:10px;font-size:12px;letter-spacing:.04em;color:#7f5716;font-weight:700;text-align:center}
+.shots-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.shots-grid.three{grid-template-columns:repeat(3,1fr);margin-top:14px}
+.shot{margin:0}
+.shot.mat{background:#f7efe1;border:1px solid rgba(134,98,45,.16);padding:10px}
+.shot.mat img{aspect-ratio:3/4;object-fit:contain;object-position:center;padding:6px;background:#fffdf8;border:1px solid rgba(134,98,45,.14)}
+.shot img{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;object-position:center 35%;border:1px solid rgba(134,98,45,.16);background:#f3ede2}
+.shot.contain img{object-fit:contain;object-position:center;padding:14px;background:#f0e8db}
+.shot figcaption{margin-top:10px;font-size:12px;letter-spacing:.04em;color:#7f5716;font-weight:700}
+
+/* ---------- 프로그램·비용 ---------- */
+.program{background:#f2e6d3;padding:120px clamp(22px,7vw,110px)}
+.program-head{margin-bottom:48px}
+.program-head h2{font-family:var(--serif);font-size:clamp(32px,3.9vw,54px);letter-spacing:-.055em;margin:0 0 16px;font-weight:700;line-height:1.3}
+.program-head>p:last-child{margin:0;color:#6f665a;font-size:15.5px;line-height:1.9;max-width:640px}
+.info-grid{display:grid;grid-template-columns:1.08fr 1fr;gap:28px;align-items:start}
+.info-block{background:var(--white);border:1px solid rgba(134,98,45,.16);padding:34px clamp(20px,3vw,36px)}
+.info-block h3{font-family:var(--serif);font-size:25px;margin:0 0 22px;color:#0a1b3c;font-weight:700;letter-spacing:-.03em}
+.fee-table{width:100%;border-collapse:collapse;font-size:14px}
+.fee-table caption{text-align:left;font-size:12px;color:#6b6459;padding-bottom:12px}
+.fee-table th,.fee-table td{padding:14px 8px;border-bottom:1px solid #e7dac4;text-align:left;vertical-align:top}
+.fee-table thead th{font-size:11px;letter-spacing:.06em;color:#7f5716;font-weight:800;border-bottom:2px solid #0a1b3c}
+.fee-table tbody th{font-weight:700;color:#0a1b3c;white-space:nowrap;font-size:14px}
+.fee-table td:nth-child(2){color:#5f594f;font-size:13.5px;line-height:1.8}
+.fee-table td:last-child{text-align:right;font-weight:800;white-space:nowrap;color:#0a1b3c;font-size:15px}
+.fee-table td:last-child span{display:block;font-weight:400;font-size:11px;color:#6b6459;letter-spacing:0}
+.fee-main{display:flex;align-items:baseline;gap:14px;border-bottom:1px solid #e7dac4;padding-bottom:18px;margin-bottom:0}
+.fee-main .big{font-family:var(--serif);font-size:38px;color:#0a1b3c;font-weight:700;line-height:1}
+.fee-main .big small{font-size:15px;color:#6b6459;font-weight:400;margin-left:4px}
+.fee-main .desc{font-size:13px;color:#6b6459;line-height:1.7}
+.table-note{margin:16px 0 0;font-size:11.5px;line-height:1.85;color:#6b6459}
+.info-facts{margin:0;border-top:1px solid #e7dac4;padding:0}
+.info-facts div{display:grid;grid-template-columns:74px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid #e7dac4}
+.info-facts dt{font-size:12.5px;color:#6b6459;margin:0}
+.info-facts dd{margin:0;font-size:13.5px;font-weight:600;color:#3f3a33;line-height:1.65}
+.cautions{margin:18px 0 0;padding-left:16px;font-size:12px;line-height:1.9;color:#6b6459}
+.trust{margin:26px 0 0;display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.trust-item{background:rgba(255,255,255,.62);border:1px solid rgba(134,98,45,.16);padding:20px 22px}
+.trust-item span{display:block;font-size:10px;letter-spacing:.2em;font-weight:800;color:#7f5716;margin-bottom:8px}
+.trust-item strong{display:block;font-family:var(--serif);font-size:17px;color:#0a1b3c;margin-bottom:6px;font-weight:700}
+.trust-item p{margin:0;font-size:12px;line-height:1.75;color:#6b6459}
+
+/* ---------- 후기 ---------- */
+.reviews{background:var(--white);padding:110px clamp(22px,7vw,110px);border-top:1px solid #ecdfc9}
+.reviews-head{max-width:680px;margin-bottom:46px}
+.reviews-head h2{font-family:var(--serif);font-size:clamp(32px,3.9vw,52px);letter-spacing:-.055em;margin:0 0 18px;font-weight:700;line-height:1.3}
+.reviews-head>p:last-child{margin:0;color:#6f665a;font-size:15.5px;line-height:1.9}
+.reviews-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #d9c9b4}
+.review{padding:34px 22px;border-bottom:1px solid #d9c9b4;border-right:1px solid #d9c9b4;display:flex;flex-direction:column}
+.review:last-child{border-right:0}
+.review small{letter-spacing:.18em;color:#795520;font-size:10px;font-weight:800}
+.review h3{font-family:var(--serif);font-size:20px;margin:10px 0 10px;color:#0a1b3c;font-weight:700;line-height:1.45}
+.review p{font-size:13px;color:#777067;margin:0;line-height:1.85}
+.reviews-note{margin:20px 0 0;font-size:11.5px;color:#8b8272;line-height:1.8}
+
+/* ---------- 인용 ---------- */
+.quote-section{padding:140px 24px;text-align:center;background:#f5e7d1;position:relative;overflow:hidden}
+.quote-section:before{content:"“";position:absolute;font-family:serif;font-size:400px;line-height:1;color:rgba(190,134,45,.09);left:50%;top:-40px;transform:translateX(-50%)}
+.quote-section blockquote{position:relative;font-family:var(--serif);font-size:clamp(28px,4.2vw,54px);line-height:1.5;margin:0;letter-spacing:-.04em;font-weight:700;color:#1d1a15}
+.quote-section blockquote strong{color:#0a7542;font-weight:700}
+.quote-section p{font-size:12px;letter-spacing:.2em;color:#9a7b4c;margin-top:28px}
+
+/* ---------- 문의 ---------- */
+.contact{background:linear-gradient(125deg,#07142e,#102b55);color:#fff;padding:110px clamp(22px,7vw,110px);display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(36px,6vw,80px);align-items:start}
+.contact h2{font-family:var(--serif);font-size:clamp(32px,3.7vw,50px);line-height:1.3;letter-spacing:-.055em;margin:0 0 18px;font-weight:700}
+.contact-lead{color:#b7c1d3;font-size:15px;line-height:1.9;margin:0 0 32px}
+.contact-direct{display:flex;flex-direction:column}
+.contact-direct a{display:grid;grid-template-columns:66px 1fr;gap:14px;align-items:center;padding:15px 0;border-top:1px solid rgba(255,255,255,.14);font-size:15px;font-weight:600}
+.contact-direct a:last-child{border-bottom:1px solid rgba(255,255,255,.14)}
+.contact-direct span{font-size:11px;letter-spacing:.14em;color:#8fa0bd;font-weight:700}
+.contact-direct a:hover{color:#f0c36b}
+.inquiry{display:grid;grid-template-columns:1fr 1fr;gap:16px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);padding:clamp(22px,3vw,34px)}
+.field{display:flex;flex-direction:column;gap:7px;min-width:0}
+.field-full{grid-column:1/-1}
+.field label{font-size:12.5px;font-weight:700;color:#d5dced}
+.field label .req{color:#e8b555}
+.field label .opt{color:#8fa0bd;font-weight:400}
+.field input[type=text],.field input[type=tel],.field select,.field textarea{width:100%;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.2);border-radius:3px;padding:12px 14px;color:#fff;font-family:inherit;font-size:14.5px;transition:border-color .2s,background .2s;min-height:48px}
+.field select{appearance:none;-webkit-appearance:none;background-image:linear-gradient(45deg,transparent 50%,#9fb0c9 50%),linear-gradient(135deg,#9fb0c9 50%,transparent 50%);background-position:calc(100% - 20px) 21px,calc(100% - 14px) 21px;background-size:6px 6px,6px 6px;background-repeat:no-repeat;padding-right:40px}
+.field select option{background:#0d2247;color:#fff}
+.field textarea{resize:vertical;line-height:1.7;min-height:132px}
+.field input::placeholder,.field textarea::placeholder{color:#7b8aa5}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:#e8b555;background:rgba(255,255,255,.11)}
+.field input:focus-visible,.field textarea:focus-visible,.field select:focus-visible{outline:2px solid #ffd98a;outline-offset:1px}
+.field.invalid input,.field.invalid textarea,.field.invalid select{border-color:#e88b7a}
+.field.invalid label{color:#f0a494}
+.consent{grid-column:1/-1;display:flex;align-items:flex-start;gap:10px;margin-top:2px}
+.consent input{width:17px;height:17px;flex:none;margin-top:2px;accent-color:#d6a148}
+.consent label{font-size:13px;font-weight:400;color:#b7c1d3;line-height:1.6}
+.consent button{background:none;border:0;padding:0;font:inherit;color:#f0c36b;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.inquiry .button{width:100%;grid-column:1/-1}
+.inquiry .button[disabled]{opacity:.55;cursor:not-allowed;transform:none}
+.form-hint{grid-column:1/-1;margin:-6px 0 0;font-size:11.5px;color:#8fa0bd;line-height:1.7}
+.form-status{grid-column:1/-1;margin:4px 0 0;font-size:13.5px;line-height:1.8;min-height:1.2em}
+.form-status.ok{color:#7ddba4}
+.form-status.err{color:#f0a494}
+.handoff{grid-column:1/-1;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);padding:18px 18px 16px;border-radius:3px}
+.handoff[hidden]{display:none}
+.handoff h4{margin:0 0 10px;font-size:14px;color:#fff;font-weight:800}
+.handoff p{margin:0 0 14px;font-size:12.5px;color:#b7c1d3;line-height:1.8}
+.handoff-actions{display:flex;gap:8px;flex-wrap:wrap}
+.handoff-actions .button{width:auto;grid-column:auto;min-height:44px;padding:0 16px;font-size:13px}
+.btn-copy{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.28);color:#fff}
+
+/* ---------- 푸터 ---------- */
+footer{display:block;background:#050c1d;color:#8490a3;padding:52px clamp(22px,7vw,110px) 44px}
+.footer-top{display:flex;justify-content:space-between;align-items:center;gap:26px;flex-wrap:wrap;padding-bottom:26px;border-bottom:1px solid rgba(255,255,255,.1)}
+.footer-brand{display:flex;flex-direction:column;gap:8px}
+.footer-brand img{height:34px;width:auto}
+.footer-brand p{margin:0;font-size:11.5px;letter-spacing:.06em;color:#8490a3}
+.footer-nav{display:flex;gap:24px;flex-wrap:wrap;font-size:12.5px}
+.footer-nav a,.footer-nav button{color:#9aa6ba;background:none;border:0;padding:0;font:inherit;cursor:pointer}
+.footer-nav a:hover,.footer-nav button:hover{color:#f0c36b}
+.footer-biz{padding-top:24px;font-size:12px;line-height:1.95;color:#8490a3}
+.footer-biz p{margin:0}
+.footer-biz strong{color:#c9d2e0;font-size:13px;font-weight:700}
+.footer-biz .legal{margin-top:14px;color:#6c7789;font-size:11px;line-height:1.85}
+.footer-biz .copy{margin-top:10px;color:#5d6879;font-size:11px;letter-spacing:.04em}
+
+/* ---------- 개인정보 안내 ---------- */
+dialog{border:0;padding:0;border-radius:6px;max-width:640px;width:calc(100% - 32px);background:var(--white);color:var(--ink);box-shadow:0 40px 80px rgba(0,0,0,.45)}
+dialog::backdrop{background:rgba(4,10,24,.7)}
+.doc{padding:38px clamp(20px,4vw,40px) 34px;max-height:82vh;overflow:auto}
+.doc h3{font-family:var(--serif);font-size:24px;margin:0 0 18px;color:#0a1b3c;font-weight:700}
+.doc dl{margin:0;border-top:1px solid #e7dac4}
+.doc dl div{padding:12px 0;border-bottom:1px solid #e7dac4;display:grid;grid-template-columns:96px 1fr;gap:12px;font-size:13.5px;line-height:1.8}
+.doc dt{color:#6b6459;margin:0;font-size:12.5px}
+.doc dd{margin:0;color:#3f3a33}
+.doc ul{margin:14px 0 0;padding-left:18px;font-size:12.5px;line-height:1.9;color:#6b6459}
+.doc .close{margin-top:22px;width:100%}
+
+/* ---------- 반응형 ---------- */
+@media(max-width:1100px){
+  .filmstrip{grid-template-columns:1fr;justify-items:center;text-align:center}
+  .film-copy{max-width:560px}
+  .film-chapters li{text-align:left}
+  .reviews-grid{grid-template-columns:repeat(2,1fr)}
+  .review:nth-child(2n){border-right:0}
+  .top-nav{display:none}
+}
+@media(max-width:980px){
+  .hero{grid-template-columns:1fr;padding-top:120px;padding-bottom:70px;min-height:0;text-align:center}
+  .hero-copy{max-width:640px;margin:0 auto}
+  .hero-lead{margin-left:auto;margin-right:auto}
+  .hero-actions,.spec-pills{justify-content:center}
+  .spec-pills{text-align:left}
+  .hero-visual{height:auto;margin-top:44px;padding:10px 0 30px}
+  .device-window{width:min(66%,340px);transform:none}
+  .float-card{left:0;top:3%;transform:rotate(-4deg);padding:12px 16px}
+  .float-card strong{font-size:18px}
+  .float-card small{font-size:11px}
+  .seal{width:96px;height:96px;right:2%;bottom:4%}
+  .scroll-cue{display:none}
+  .value-section{grid-template-columns:1fr;gap:56px;align-items:start}
+  .value-intro{max-width:560px}
+  .flow{grid-template-columns:1fr;gap:12px}
+  .flow-plus,.flow-eq{padding:2px 0}
+  .signature{grid-template-columns:1fr}
+  .signature-art{padding:60px 28px}
+  .figure-stack{width:min(100%,340px)}
+  .steps{grid-template-columns:1fr;gap:40px;justify-items:center}
+  .steps-copy{max-width:640px;width:100%}
+  .signature-copy{padding:56px 24px 80px}
+  .info-grid{grid-template-columns:1fr}
+  .contact{grid-template-columns:1fr}
+  .programs-list{grid-template-columns:repeat(2,1fr)}
+  .trust{grid-template-columns:1fr}
+}
+@media(max-width:740px){
+  .topbar{height:70px}
+  .brand-logo{height:34px}
+  .top-cta{padding:8px 14px;font-size:12px}
+  .hero{padding:104px 22px 56px}
+  .hero h1{font-size:clamp(38px,10.6vw,52px);letter-spacing:-.05em}
+  .hero-lead{font-size:15.5px}
+  .hero-actions{width:100%}
+  .hero-actions .button{width:100%}
+  .spec-pills{width:100%;display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:30px}
+  .spec-pills span:last-child{grid-column:1/-1}
+  .manifesto{padding:88px 22px}
+  .manifesto-body{font-size:15px}
+  .value-section{padding:88px 22px}
+  .value-grid{grid-template-columns:1fr}
+  .value-card{min-height:225px}
+  .value-card.featured{transform:none}
+  .principle{padding:88px 22px}
+  .principle-head{margin-bottom:40px}
+  .programs{padding:22px 20px}
+  .programs-list{grid-template-columns:1fr;gap:8px}
+  .filmstrip{padding:84px 22px;gap:34px}
+  .film-player{width:min(100%,290px)}
+  .audience{padding:88px 22px}
+  .audience-grid{grid-template-columns:1fr}
+  .aud-card{padding:26px 20px}
+  .shots{padding:84px 22px}
+  .shots-wide{grid-template-columns:1fr;gap:10px}
+  .shots-grid{grid-template-columns:repeat(2,1fr);gap:10px}
+  .shots-grid.three{grid-template-columns:1fr;gap:10px}
+  .shot.mat img{aspect-ratio:auto;object-fit:none;padding:0;border:0}
+  .steps{padding:84px 22px}
+  .inset-frame{left:-5%;width:40%;padding:6px}
+  .audience-slide{padding:8px}
+  .program{padding:88px 22px}
+  .info-block{padding:26px 20px}
+  .fee-table thead{display:none}
+  .fee-table tr{display:grid;grid-template-columns:1fr auto;gap:4px 12px;padding:14px 0;border-bottom:1px solid #e7dac4}
+  .fee-table th,.fee-table td{border:0;padding:0}
+  .fee-table tbody th{grid-column:1/-1;font-size:14px;color:#0a1b3c}
+  .fee-table td:nth-child(2){font-size:13px}
+  .fee-table td:last-child{text-align:right;font-size:14px}
+  .info-facts div{grid-template-columns:68px 1fr}
+  .reviews{padding:84px 22px}
+  .reviews-grid{grid-template-columns:1fr}
+  .review{border-right:0;padding:28px 8px}
+  .quote-section{padding:96px 20px}
+  .contact{padding:80px 22px}
+  .contact-actions{width:100%}
+  .inquiry{grid-template-columns:1fr}
+  footer{text-align:left}
+  .footer-brand{margin-bottom:20px}
+  .doc dl div{grid-template-columns:1fr;gap:2px}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+  .button{transition:none}
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">본문 바로가기</a>
+
+<header class="topbar">
+  <a class="brand" href="#top" aria-label="파워냅 뇌건강센터 처음으로">
+    <img class="brand-logo" src="assets/logo-powernap-light.png" alt="POWER NAP — AI BRAIN SOLUTION">
+  </a>
+  <nav class="top-nav" aria-label="주요 메뉴">
+    <a href="#why">체험 안내</a>
+    <a href="#program">프로그램·비용</a>
+    <a href="#center">센터 소개</a>
+    <a href="#contact">오시는 길</a>
+  </nav>
+  <div class="top-right">
+    <a class="top-cta" href="https://forms.gle/E94sRd4z5Ac8VgGV9" target="_blank" rel="noopener">체험 예약</a>
+  </div>
+</header>
+
+<main id="main">
+<!-- 히어로 -->
+<section class="hero" id="top">
+  <div class="hero-copy">
+    <p class="eyebrow">POWER NAP · AI BRAIN SOLUTION</p>
+    <h1>수면의 가치를 높이는<br><em>AI 뇌과학 기술</em></h1>
+    <p class="hero-lead">EEG 뇌파와 실시간 뉴로피드백으로 수면·명상·집중·자기조절을 잇는 (주)에이아이브레인솔루션의 뇌건강 브랜드, <strong>파워냅(POWER NAP)</strong>입니다.</p>
+    <div class="hero-actions">
+      <a class="button button-primary" href="https://forms.gle/E94sRd4z5Ac8VgGV9" target="_blank" rel="noopener">체험 신청하기</a>
+      <a class="button button-ghost" href="tel:0220880632">02-2088-0632 전화하기</a>
+    </div>
+    <div class="spec-pills">
+      <span><b>30분</b>1회 뇌파 체험</span>
+      <span><b>30,000원</b>체험 비용</span>
+      <span><b>1:1</b>프라이빗 공간</span>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="halo" aria-hidden="true"></div>
+    <div class="device-window">
+      <img src="assets/hero-device.jpg" alt="파워냅 뉴로피드백 기기 — 이마에 착용하는 무선 뇌파 측정 헤드밴드" width="640" height="740">
+    </div>
+    <div class="seal" aria-hidden="true">
+      <img src="assets/emblem.jpg" alt="">
+    </div>
+    <div class="float-card" aria-hidden="true">
+      <small>오늘의 깊은 수면이</small>
+      <strong>건강한 내일을</strong>
+    </div>
+    <div class="scroll-cue" aria-hidden="true"><span>SCROLL</span><i></i></div>
+  </div>
+</section>
+
+<!-- 선언 -->
+<section class="manifesto">
+  <p class="section-label">POWER NAP BRAIN CENTER</p>
+  <p class="manifesto-kicker">익숙한 휴식에, 새로운 기준을</p>
+  <h2 class="reveal">매일 30분,<br><span>우리 가족 뇌건강 관리</span></h2>
+  <p class="manifesto-body reveal">잠은 시간이 아니라 회복의 질입니다. 파워냅은 이마에 닿는 센서 하나로 뇌파를 읽고, 30분 동안 스스로 편안해지는 연습을 돕습니다. 측정하고, 훈련하고, 함께 살펴보는 일 — 뇌건강 관리의 새로운 기준을 제안합니다.</p>
+</section>
+
+<!-- 3가지 기준 -->
+<section class="value-section" id="why">
+  <div class="value-intro">
+    <p class="section-label">WHY POWER NAP</p>
+    <h2 class="reveal">한 번의 체험에 담은<br>세 가지 기준</h2>
+    <p class="reveal">복잡한 설명보다, 내 뇌 상태를 아는 데 필요한 것에 집중했습니다.</p>
+  </div>
+  <div class="value-grid">
+    <article class="value-card reveal">
+      <p class="num">01</p>
+      <p class="icon" aria-hidden="true">◇</p>
+      <h3>눈으로 확인</h3>
+      <p>체험 전과 후의 뇌파 그래프를 나란히 놓고 함께 봅니다. 변화가 보이면, 관리의 방향도 달라집니다.</p>
+    </article>
+    <article class="value-card featured reveal">
+      <p class="num">02</p>
+      <p class="icon" aria-hidden="true">◉</p>
+      <h3>30분의 몰입</h3>
+      <p>기기를 쓰고 편안히 앉아 30분. AI가 지금의 상태를 실시간으로 알려주며 이완과 집중의 감각을 익히게 합니다.</p>
+    </article>
+    <article class="value-card reveal">
+      <p class="num">03</p>
+      <p class="icon" aria-hidden="true">✦</p>
+      <h3>1:1 밀착 상담</h3>
+      <p>측정부터 해석, 생활 습관 안내까지 대표가 직접 살펴봅니다. 조용한 분리 공간에서 한 분만 모십니다.</p>
+    </article>
+  </div>
+</section>
+
+<!-- 체험 4단계 -->
+<section class="steps" id="experience">
+  <div class="steps-art">
+    <figure class="steps-frame">
+      <img src="assets/brand-step-poster.jpg" alt="POWER NAP 체험은 이렇게 진행됩니다 — ① 상담 ② 상태 확인 ③ 30분 파워냅 ④ 맞춤 안내" width="900" height="1125" loading="lazy">
+    </figure>
+  </div>
+  <div class="steps-copy">
+    <p class="eyebrow">EXPERIENCE</p>
+    <h2 class="reveal">체험은 이렇게<br>진행됩니다</h2>
+    <p class="reveal">처음 방문하시는 분도 편안하게 체험하실 수 있도록 네 단계로 진행합니다.</p>
+    <ul class="step-list">
+      <li class="reveal"><span class="num" aria-hidden="true">1</span><div><h3>상담</h3><p>현재 컨디션과 궁금한 점을 먼저 듣고, 오늘의 진행 순서를 안내합니다.</p></div></li>
+      <li class="reveal"><span class="num" aria-hidden="true">2</span><div><h3>상태 확인</h3><p>기기를 쓰고 수면·피로·집중 상태를 뇌파로 확인합니다.</p></div></li>
+      <li class="reveal"><span class="num" aria-hidden="true">3</span><div><h3>30분 파워냅</h3><p>편안히 앉아 30분, AI가 알려주는 신호를 따라 뇌를 쉬게 합니다.</p></div></li>
+      <li class="reveal"><span class="num" aria-hidden="true">4</span><div><h3>맞춤 안내</h3><p>전후 그래프를 함께 보고, 개인에게 맞는 관리 방향을 안내합니다.</p></div></li>
+    </ul>
+    <p class="step-note">※ 측정과 훈련은 건강 관리 프로그램이며, 의료기관의 검사나 진료를 대신하지 않습니다.</p>
+  </div>
+</section>
+
+<!-- 원리 -->
+<section class="principle">
+  <div class="principle-head">
+    <p class="section-label">HOW IT WORKS</p>
+    <h2 class="reveal">뇌파(EEG)와 <span style="white-space:nowrap">뉴로피드백</span>이란?</h2>
+    <p class="principle-lead reveal">뇌가 활동할 때는 미세한 전기 신호가 생깁니다. 파워냅은 그 신호를 <strong>읽고</strong>, <strong>바로 알려주는</strong> 방식으로 스스로 편안해지는 연습을 돕습니다.</p>
+  </div>
+
+  <figure class="principle-slide reveal">
+    <img src="assets/brand-slide-company.jpg" alt="AI 뇌과학 전문기업 — 100년 뇌과학 역사와 뉴로피드백 기술을 바탕으로 두뇌훈련·인지능력 향상·감정안정을 제공하는 (주)에이아이브레인솔루션" width="1280" height="720" loading="lazy">
+    <figcaption>AI 뇌과학 전문기업 — (주)에이아이브레인솔루션</figcaption>
+  </figure>
+
+  <div class="flow">
+    <div class="flow-item reveal">
+      <p class="flow-tag">MEASURE</p>
+      <h3>뇌파 측정</h3>
+      <p>이마에 닿는 센서가 뇌 활동의 신호를 읽어 실시간 지표로 보여줍니다. 훈련 전에 먼저 측정합니다.</p>
+    </div>
+    <div class="flow-plus" aria-hidden="true">+</div>
+    <div class="flow-item reveal">
+      <p class="flow-tag">FEEDBACK</p>
+      <h3>실시간 피드백</h3>
+      <p>지금의 상태 변화를 AI가 소리와 화면으로 알려줍니다. 잘 되고 있다는 신호를 받으며 몸의 긴장을 풉니다.</p>
+    </div>
+    <div class="flow-eq" aria-hidden="true">=</div>
+    <div class="flow-item accent reveal">
+      <p class="flow-tag">POWER NAP 30</p>
+      <h3>파워냅 30분</h3>
+      <p>측정과 피드백이 만나, 편안한 상태에 머무르는 연습을 30분 동안 이어갑니다. 끝나면 전후 그래프를 함께 봅니다.</p>
+    </div>
+  </div>
+
+  <div class="programs">
+    <p class="programs-label">6가지 브레인케어 프로그램</p>
+    <ul class="programs-list">
+      <li>수면·휴식 — 잠들기 전 긴장 낮추기</li>
+      <li>EEG·뉴로피드백 — 자기조절 훈련</li>
+      <li>인지건강 — 기억·집중 관리 습관</li>
+      <li>학습·집중력 — 몰입과 시험 컨디션</li>
+      <li>심리상담·정서 안정 — 마음 살피기</li>
+      <li>명상·이완 — 호흡으로 쉬어가기</li>
+    </ul>
+  </div>
+  <p class="principle-note">파워냅의 측정과 훈련은 건강 관리 프로그램이며, 의료기관의 검사나 진료를 대신하지 않습니다. 임신 중이거나 건강상 주의가 필요한 경우 예약 시 미리 알려 주세요.</p>
+</section>
+
+<!-- 영상 -->
+<section class="filmstrip">
+  <div class="film-copy">
+    <p class="eyebrow">BRAND FILM</p>
+    <h2 class="reveal">영상으로 만나는<br>POWER NAP</h2>
+    <p class="reveal">10초 브랜드 콘셉트 영상입니다. 로봇 캐릭터와 뇌 그래픽으로 파워냅의 메시지를 담았습니다.</p>
+    <ul class="film-chapters">
+      <li>AI BRAIN SOLUTION 브랜드</li>
+      <li>AI 두뇌훈련·뇌청소 메시지</li>
+      <li>마스코트 캐릭터와 기기</li>
+      <li>10초 · 소리 포함</li>
+    </ul>
+  </div>
+  <div class="film-player">
+    <video controls playsinline preload="metadata" poster="assets/brand-film-poster.jpg" width="720" height="1280">
+      <source src="assets/brand-film.mp4" type="video/mp4">
+      브라우저가 영상을 지원하지 않습니다. <a href="assets/brand-film.mp4">영상 열기</a>
+    </video>
+    <p class="film-note">뇌 그래픽은 설명을 위한 표현이며 실제 측정 데이터가 아닙니다.</p>
+  </div>
+</section>
+
+<!-- 센터 -->
+<section class="signature" id="center">
+  <div class="signature-art">
+    <div class="figure-stack">
+      <figure class="official-frame">
+        <img src="assets/brand-model.jpg" alt="POWER NAP 패키지 박스와 파워냅 기기를 든 모습" width="900" height="1050" loading="lazy">
+      </figure>
+      <figure class="inset-frame">
+        <img src="assets/portrait-rest.jpg" alt="파워냅 기기를 착용하고 편안히 휴식하는 모습" width="820" height="1124" loading="lazy">
+      </figure>
+    </div>
+  </div>
+  <div class="signature-copy">
+    <p class="eyebrow light">THE CENTER</p>
+    <h2 class="reveal">측정하고, 훈련하고,<br>함께 살펴봅니다</h2>
+    <p class="reveal">서초 우면동의 파워냅 뇌건강센터는 조용한 1:1 공간에서 운영됩니다. 예약한 시간에는 다른 일정 없이 한 분만을 위해 자리를 비워 둡니다. 기기와 프로그램을 직접 만든 대표가 측정부터 해석, 상담까지 이어서 안내합니다.</p>
+    <dl class="facts">
+      <div><dt>운영</dt><dd>(주)에이아이브레인솔루션 · 파워냅 뇌건강센터</dd></div>
+      <div><dt>대표</dt><dd>우수미</dd></div>
+      <div><dt>위치</dt><dd>서울특별시 서초구 바우뫼로7길 8<br>우면종합상가 702호</dd></div>
+      <div><dt>방문</dt><dd>사전 예약제 · 무료 주차 · 1:1 분리 공간</dd></div>
+      <div><dt>문의</dt><dd><a href="tel:0220880632">02-2088-0632</a></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- 대상별 -->
+<section class="audience">
+  <div class="audience-head">
+    <p class="section-label">FOR EVERYONE</p>
+    <h2 class="reveal">나이와 상황에 따라,<br>관리법도 달라집니다</h2>
+    <p class="reveal">같은 30분이라도 필요한 지점은 다릅니다. 상담 후 지금의 컨디션에 맞는 프로그램을 고릅니다.</p>
+  </div>
+  <div class="audience-grid">
+    <article class="aud-card reveal">
+      <p class="aud-tag">FOR STUDENTS</p>
+      <h3>수험생</h3>
+      <p>시험을 앞두고 잡생각이 많아지는 시기. 30분 동안 호흡과 이완에 집중하며 긴장을 낮추는 연습을 합니다. 시험 전 컨디션 관리에 활용해 보세요.</p>
+      <p class="aud-note">※ 학습 효과나 성적 향상을 보장하지 않습니다.</p>
+    </article>
+    <article class="aud-card reveal">
+      <p class="aud-tag">FOR WORK &amp; STUDY</p>
+      <h3>직장인</h3>
+      <p>하루 종일 화면을 보고 앉아 있는 시간이 길다면, 점심시간 30분의 뇌 리셋이 필요합니다. 짧게 다녀가도 되는 1:1 예약제로 운영합니다.</p>
+      <p class="aud-note">※ 사전 예약 후 방문해 주세요.</p>
+    </article>
+    <article class="aud-card reveal">
+      <p class="aud-tag">FOR SENIORS</p>
+      <h3>어르신 · 부모님</h3>
+      <p>건강검진은 챙기면서 뇌 컨디션은 미뤄 두셨다면, 편안히 앉아 30분 쉬어가는 체험부터 시작해 보세요. 보호자와 함께 오셔도 좋습니다.</p>
+      <p class="aud-note">※ 기기 착용이 어려운 경우 상담 후 진행합니다.</p>
+    </article>
+    <article class="aud-card reveal">
+      <p class="aud-tag">FOR FAMILY</p>
+      <h3>가족 · 홈케어</h3>
+      <p>센터에서 경험한 30분을 집에서도 이어가고 싶다면 파워냅 기기 구매 상담을 받아 보세요. 매일 30분, 우리 가족의 뇌건강 관리 습관이 됩니다.</p>
+      <p class="aud-note">※ 기기 구매는 방문 상담 후 진행됩니다.</p>
+    </article>
+  </div>
+  <figure class="audience-slide reveal">
+    <img src="assets/brand-slide-audience.jpg" alt="대상별 맞춤 적용 — 시니어, 청소년·학생, 회원·가족, 직원·봉사단, 지역주민을 위한 뇌건강 솔루션" width="1280" height="720" loading="lazy">
+    <figcaption>대상별 맞춤 적용 — 모든 세대를 위한 뇌건강 솔루션</figcaption>
+  </figure>
+</section>
+
+<!-- 실제 모습 -->
+<section class="shots">
+  <div class="shots-head">
+    <p class="section-label">THE REAL THING</p>
+    <h2 class="reveal">제품과 프로그램 모습</h2>
+    <p class="reveal">파워냅 기기와 훈련 장면, 공식 포스터를 브랜드 이미지로 담았습니다.</p>
+  </div>
+  <div class="shots-wide">
+    <figure class="shot-wide reveal">
+      <img src="assets/brand-slide-solution.jpg" alt="대한민국 뇌건강 회복 솔루션 — 수면회복, 치매예방 및 개선, 학습 능력 향상, AI 두뇌훈련" width="1280" height="720" loading="lazy">
+      <figcaption>브랜드 슬라이드 — 대한민국 뇌건강 회복 솔루션</figcaption>
+    </figure>
+    <figure class="shot-wide reveal">
+      <img src="assets/brand-slide-programs.jpg" alt="핵심 프로그램 구성 — 수면회복, 치매예방·인지건강, AI 두뇌훈련, 심리정서 회복" width="1280" height="720" loading="lazy">
+      <figcaption>브랜드 슬라이드 — 핵심 프로그램 구성</figcaption>
+    </figure>
+  </div>
+  <figure class="shots-single reveal">
+    <img src="assets/brand-poster-sleep.jpg" alt="수면회복 프로그램 — 뇌파 안정화, 수면 질 개선, 스트레스 완화" width="1100" height="619" loading="lazy">
+    <figcaption>수면회복 프로그램 — 뇌를 회복하면 삶이 달라집니다</figcaption>
+  </figure>
+  <div class="shots-grid three">
+    <figure class="shot mat reveal">
+      <img src="assets/brand-poster-center.jpg" alt="파워냅 뇌건강센터 — AI 뇌파 분석과 1:1 맞춤 체험 안내" width="900" height="900" loading="lazy">
+      <figcaption>AI 뇌파 분석 · 1:1 체험</figcaption>
+    </figure>
+    <figure class="shot mat reveal">
+      <img src="assets/brand-poster-apply.jpg" alt="단 30분, 두뇌회복 — 파워냅 체험신청 포스터" width="820" height="1093" loading="lazy">
+      <figcaption>체험 신청 포스터</figcaption>
+    </figure>
+    <figure class="shot mat reveal">
+      <img src="assets/brand-poster-woosumi.jpg" alt="단 30분, 두뇌회복 — 파워냅 체험 안내 포스터, 우수미 두뇌교육사" width="760" height="1140" loading="lazy">
+      <figcaption>대표 소개 포스터</figcaption>
+    </figure>
+  </div>
+  <p class="principle-note">이미지는 파워냅 공식 제작물입니다. 포스터에 적힌 프로그램 이름(치매예방·인지건강 등)은 건강 관리 프로그램의 명칭이며, 질병의 예방이나 개선 효과를 보장하지 않습니다.</p>
+</section>
+
+<!-- 프로그램·비용 -->
+<section class="program" id="program">
+  <div class="program-head">
+    <p class="section-label">PROGRAM &amp; FEE</p>
+    <h2 class="reveal">체험 프로그램과 비용</h2>
+    <p class="reveal">체험은 1회 30,000원, 사전 예약제로 운영합니다. 기기 구매는 방문 상담 또는 전화로 문의해 주세요.</p>
+  </div>
+
+  <div class="info-grid">
+    <div class="info-block">
+      <h3>체험 · 기기</h3>
+      <table class="fee-table">
+        <caption>부가세 포함 금액입니다.</caption>
+        <thead>
+          <tr><th scope="col">구분</th><th scope="col">내용</th><th scope="col">비용</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1회 체험</th>
+            <td>1:1 정밀 뇌파(EEG) 검사 + 30분 AI 뇌훈련<br>(수면·명상 / 치매예방 / 학습향상 중 선택)</td>
+            <td>30,000원<span>1회 · 사전 예약제</span></td>
+          </tr>
+          <tr>
+            <th scope="row">기기 구매</th>
+            <td>파워냅 홈케어 기기<br>(뉴로피드백 시스템)</td>
+            <td>2,970,000원<span>VAT 포함</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="table-note">체험 비용은 방문 후 현장에서 결제합니다. 기기 구매는 방문 상담 후 진행되며, 자세한 조건은 상담 시 안내드립니다. 치매예방·학습향상은 훈련 프로그램의 이름이며, 질병의 예방이나 성적 향상 효과를 보장하지 않습니다.</p>
+    </div>
+
+    <div class="info-block">
+      <h3>이용 안내</h3>
+      <dl class="info-facts">
+        <div><dt>장소</dt><dd>서울특별시 서초구 바우뫼로7길 8, 우면종합상가 702호 (무료 주차)</dd></div>
+        <div><dt>진행</dt><dd>1:1 분리 공간에서 대표가 직접 진행</dd></div>
+        <div><dt>예약</dt><dd>전화 02-2088-0632 또는 온라인 체험 신청 폼</dd></div>
+        <div><dt>구성</dt><dd>1:1 정밀 뇌파(EEG) 검사 + 30분 AI 뇌훈련 + 결과 안내</dd></div>
+        <div><dt>준비</dt><dd>편한 복장으로 방문해 주세요. 별도 준비물은 없습니다.</dd></div>
+      </dl>
+      <ul class="cautions">
+        <li>모든 프로그램은 사전 예약제로 운영됩니다.</li>
+        <li>방문 시간은 예약 시 확정해 안내드립니다.</li>
+        <li>체험 비용의 분납·할인 여부는 상담 시 확인해 주세요.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="trust">
+    <div class="trust-item">
+      <span>REGISTERED</span>
+      <strong>AI수면상담사</strong>
+      <p>등록민간자격 제2026-008594호 · 단일등급<br>관리기관 (주)에이아이브레인솔루션</p>
+    </div>
+    <div class="trust-item">
+      <span>REGISTERED</span>
+      <strong>뇌인지융합AI교육전문가</strong>
+      <p>등록민간자격 제2025-005845호 · 1급 / 2급<br>관리기관 (주)에이아이브레인솔루션</p>
+    </div>
+  </div>
+</section>
+
+<!-- 후기 -->
+<section class="reviews">
+  <div class="reviews-head">
+    <p class="section-label">VISITOR NOTES</p>
+    <h2 class="reveal">체험 후기에서 자주 나온 이야기</h2>
+    <p class="reveal">네이버 플레이스에 남겨 주신 후기에서 되풀이해서 언급된 내용을 정리했습니다.</p>
+  </div>
+  <div class="reviews-grid">
+    <article class="review reveal">
+      <small>MEASURE</small>
+      <h3>그래프로 보는 변화</h3>
+      <p>체험 전과 후의 뇌파를 그래프로 비교해 보여주니, 몸으로만 느끼던 변화가 눈에 보여 신뢰가 간다는 이야기.</p>
+    </article>
+    <article class="review reveal">
+      <small>TALK</small>
+      <h3>세심한 1:1 상담</h3>
+      <p>측정 결과를 하나하나 설명해 주고, 집에서 어떻게 관리하면 좋을지까지 알려주셔서 편했다는 후기.</p>
+    </article>
+    <article class="review reveal">
+      <small>REST</small>
+      <h3>30분 뒤의 개운함</h3>
+      <p>짧게 누워 쉰 것 같은데 머리가 맑아지고 개운해졌다, 낮잠을 잔 것처럼 가볍다는 경험담.</p>
+    </article>
+    <article class="review reveal">
+      <small>SPACE</small>
+      <h3>조용한 1인 공간</h3>
+      <p>다른 사람과 마주치지 않는 분리된 공간과 무료 주차가 편했다는 이야기.</p>
+    </article>
+  </div>
+  <p class="reviews-note">※ 개별 후기의 표현을 그대로 옮기지 않고, 반복해서 언급된 내용을 요약했습니다.</p>
+</section>
+
+<!-- 인용 -->
+<section class="quote-section">
+  <blockquote class="reveal">“오늘의 깊은 수면이,<br><strong>건강한 내일</strong>을 만듭니다.”</blockquote>
+  <p>파워냅 뇌건강센터</p>
+</section>
+
+<!-- 문의 -->
+<section class="contact" id="contact">
+  <div>
+    <p class="eyebrow light">RESERVATION</p>
+    <h2 class="reveal">먼저 와서<br>30분 쉬어가세요</h2>
+    <p class="contact-lead reveal">예약 후 방문하시면 1:1로 측정하고 함께 살펴봅니다. 궁금한 점은 전화로 바로 문의하셔도 됩니다.</p>
+    <div class="contact-direct">
+      <a href="tel:0220880632"><span>전화</span>02-2088-0632</a>
+      <a href="https://forms.gle/E94sRd4z5Ac8VgGV9" target="_blank" rel="noopener"><span>예약</span>온라인 체험 신청 폼</a>
+      <a href="https://naver.me/Gvc8SoNM" target="_blank" rel="noopener"><span>지도</span>네이버 플레이스에서 보기</a>
+      <a href="http://pf.kakao.com/_xfUKxbn" target="_blank" rel="noopener"><span>카카오</span>카카오톡 채널 에이아이브레인솔루션</a>
+    </div>
+  </div>
+
+  <form class="inquiry" id="inquiryForm" novalidate>
+    <div class="field">
+      <label for="f-name">이름 <span class="req" aria-hidden="true">*</span></label>
+      <input type="text" id="f-name" name="name" autocomplete="name" placeholder="홍길동" required aria-required="true">
+    </div>
+    <div class="field">
+      <label for="f-phone">연락처 <span class="req" aria-hidden="true">*</span></label>
+      <input type="tel" id="f-phone" name="phone" inputmode="tel" autocomplete="tel" placeholder="010-0000-0000" required aria-required="true">
+    </div>
+    <div class="field field-full">
+      <label for="f-interest">관심 분야 <span class="opt">(선택)</span></label>
+      <select id="f-interest" name="interest">
+        <option value="">선택해 주세요</option>
+        <option value="수면·휴식">수면·휴식</option>
+        <option value="학습향상">학습향상</option>
+        <option value="치매예방">치매예방</option>
+        <option value="기기 구매">기기 구매</option>
+      </select>
+    </div>
+    <div class="field field-full">
+      <label for="f-message">문의 내용 <span class="req" aria-hidden="true">*</span></label>
+      <textarea id="f-message" name="message" placeholder="궁금한 점이나 희망하시는 요일·시간대를 적어 주세요." required aria-required="true"></textarea>
+    </div>
+    <div class="consent">
+      <input type="checkbox" id="f-agree" name="agree" required aria-required="true">
+      <label for="f-agree"><button type="button" id="openPrivacy">개인정보 수집·이용</button>에 동의합니다. <span class="req" aria-hidden="true">*</span></label>
+    </div>
+    <button class="button button-gold" type="submit">체험·상담 문의하기</button>
+    <p class="form-hint">버튼을 누르면 작성하신 내용이 정리되어, 전화 상담이나 체험 신청 폼으로 이어집니다.</p>
+    <div class="handoff" id="handoff" hidden>
+      <h4>문의 내용이 준비되었습니다</h4>
+      <p>이 페이지는 온라인 접수 서버와 연결되어 있지 않습니다. 아래에서 편한 방법을 골라 이어 주세요.</p>
+      <div class="handoff-actions">
+        <a class="button button-gold" href="tel:0220880632">전화로 문의</a>
+        <a class="button button-outline" href="https://forms.gle/E94sRd4z5Ac8VgGV9" target="_blank" rel="noopener">신청 폼 열기</a>
+        <button class="button btn-copy" type="button" id="copyBtn">작성 내용 복사</button>
+      </div>
+    </div>
+    <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+  </form>
+</section>
+</main>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <img src="assets/logo-powernap-light.png" alt="POWER NAP — AI BRAIN SOLUTION">
+      <p>오늘의 깊은 수면이, 건강한 내일을 만듭니다.</p>
+    </div>
+    <nav class="footer-nav" aria-label="푸터 메뉴">
+      <a href="#why">체험 안내</a>
+      <a href="#program">프로그램·비용</a>
+      <a href="#center">센터 소개</a>
+      <a href="#contact">문의</a>
+      <button type="button" id="openPrivacyFooter">개인정보 안내</button>
+    </nav>
+  </div>
+  <div class="footer-biz">
+    <p><strong>(주)에이아이브레인솔루션</strong> · 대표 우수미</p>
+    <p>서울특별시 서초구 바우뫼로7길 8, 우면종합상가 702호</p>
+    <p>대표전화 02-2088-0632 · powernap.kr</p>
+    <p class="legal">파워냅의 모든 프로그램은 건강 관리 프로그램이며, 의료기관의 검사나 진료를 대신하지 않습니다.</p>
+    <p class="copy">© 2026 AI BRAIN SOLUTION. All rights reserved.</p>
+  </div>
+</footer>
+
+<dialog id="privacyDialog" aria-labelledby="privacyTitle">
+  <div class="doc">
+    <h3 id="privacyTitle">개인정보 수집·이용 안내</h3>
+    <dl>
+      <div><dt>수집 항목</dt><dd>이름, 연락처, 관심 분야, 문의 내용</dd></div>
+      <div><dt>이용 목적</dt><dd>체험 예약 및 상담 안내</dd></div>
+      <div><dt>보유 기간</dt><dd>상담 완료 시까지 보관 후 지체 없이 파기</dd></div>
+      <div><dt>접수 방법</dt><dd>이 페이지에서 입력한 내용은 서버로 전송되지 않습니다. 문의 접수는 전화(02-2088-0632) 또는 온라인 체험 신청 폼을 통해 이루어집니다.</dd></div>
+    </dl>
+    <ul>
+      <li>동의를 거부하실 수 있으며, 이 경우 상담 안내가 제한됩니다.</li>
+      <li>온라인 체험 신청 폼으로 접수하는 경우, 해당 폼의 개인정보 수집·이용 안내가 함께 적용됩니다.</li>
+    </ul>
+    <button class="button button-gold close" type="button" id="closePrivacy">확인</button>
+  </div>
+</dialog>
+
+<script>
+(function(){
+  "use strict";
+  /* 스크롤 등장 */
+  var revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+      });
+    }, {rootMargin: '0px 0px -8% 0px', threshold: 0.08});
+    revealEls.forEach(function(el){ io.observe(el); });
+  } else {
+    revealEls.forEach(function(el){ el.classList.add('visible'); });
+  }
+
+  /* 개인정보 안내 */
+  var dlg = document.getElementById('privacyDialog');
+  function openPrivacy(e){ if(e) e.preventDefault(); if (typeof dlg.showModal === 'function') dlg.showModal(); else dlg.setAttribute('open',''); }
+  ['openPrivacy','openPrivacyFooter'].forEach(function(id){
+    var el = document.getElementById(id);
+    if (el) el.addEventListener('click', openPrivacy);
+  });
+  var closeBtn = document.getElementById('closePrivacy');
+  if (closeBtn) closeBtn.addEventListener('click', function(){ dlg.close(); });
+  if (dlg) dlg.addEventListener('click', function(ev){ if (ev.target === dlg) dlg.close(); });
+
+  /* 문의 폼 */
+  var form = document.getElementById('inquiryForm');
+  var statusEl = document.getElementById('formStatus');
+  var handoff = document.getElementById('handoff');
+  var copyBtn = document.getElementById('copyBtn');
+
+  function fieldOf(el){ return el.closest('.field') || el.closest('.consent'); }
+  function setInvalid(el, on){ var f = fieldOf(el); if (f) f.classList.toggle('invalid', !!on); }
+
+  function composed(){
+    var name = document.getElementById('f-name').value.trim();
+    var phone = document.getElementById('f-phone').value.trim();
+    var interest = document.getElementById('f-interest').value;
+    var msg = document.getElementById('f-message').value.trim();
+    return '[파워냅 뇌건강센터 체험·상담 문의]\n'
+      + '이름: ' + name + '\n'
+      + '연락처: ' + phone + '\n'
+      + '관심 분야: ' + (interest || '미선택') + '\n'
+      + '문의 내용: ' + msg;
+  }
+
+  if (form) {
+    form.addEventListener('submit', function(ev){
+      ev.preventDefault();
+      var name = document.getElementById('f-name');
+      var phone = document.getElementById('f-phone');
+      var msg = document.getElementById('f-message');
+      var agree = document.getElementById('f-agree');
+      var ok = true;
+      [name, phone, msg].forEach(function(el){ if (!el.value.trim()) { setInvalid(el, true); ok = false; } else setInvalid(el, false); });
+      if (!ok) {
+        statusEl.className = 'form-status err';
+        statusEl.textContent = '이름·연락처·문의 내용을 입력해 주세요.';
+        (!name.value.trim() ? name : (!phone.value.trim() ? phone : msg)).focus();
+        return;
+      }
+      if (!agree.checked) {
+        statusEl.className = 'form-status err';
+        statusEl.textContent = '개인정보 수집·이용에 동의해 주세요.';
+        agree.focus();
+        return;
+      }
+      statusEl.className = 'form-status ok';
+      statusEl.textContent = '작성하신 내용을 확인했습니다. 아래 방법으로 이어 주세요.';
+      handoff.hidden = false;
+      handoff.scrollIntoView({block: 'nearest', behavior: 'smooth'});
+    });
+
+    ['f-name','f-phone','f-message'].forEach(function(id){
+      var el = document.getElementById(id);
+      el.addEventListener('input', function(){ if (el.value.trim()) setInvalid(el, false); });
+    });
+  }
+
+  if (copyBtn) {
+    copyBtn.addEventListener('click', function(){
+      var text = composed();
+      function done(msg){ statusEl.className = 'form-status ok'; statusEl.textContent = msg; }
+      function fail(){ statusEl.className = 'form-status err'; statusEl.textContent = '복사가 되지 않았습니다. 내용을 직접 옮겨 적어 주세요.'; }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(function(){ done('작성하신 내용을 복사했습니다. 신청 폼이나 카카오톡에 붙여넣어 주세요.'); }, function(){ legacyCopy(text) ? done('작성하신 내용을 복사했습니다.') : fail(); });
+      } else {
+        legacyCopy(text) ? done('작성하신 내용을 복사했습니다.') : fail();
+      }
+    });
+  }
+
+  function legacyCopy(text){
+    try {
+      var ta = document.createElement('textarea');
+      ta.value = text; ta.setAttribute('readonly','');
+      ta.style.position = 'fixed'; ta.style.top = '-1000px';
+      document.body.appendChild(ta); ta.select();
+      var ok = document.execCommand('copy');
+      document.body.removeChild(ta);
+      return ok;
+    } catch(e){ return false; }
+  }
+})();
+</script>
+</body>
+</html>
