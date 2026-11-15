@@ -172,7 +172,9 @@ img{max-width:100%}
 .film-chapters{list-style:none;margin:0;padding:0;border-top:1px solid rgba(255,255,255,.14)}
 .film-chapters li{padding:13px 0 13px 26px;border-bottom:1px solid rgba(255,255,255,.1);font-size:14.5px;color:#d5dced;position:relative}
 .film-chapters li:before{content:"▸";position:absolute;left:0;color:#e8b555;font-size:12px}
-.film-player{justify-self:center;width:min(100%,320px)}
+.film-block{justify-self:center;width:min(100%,620px)}
+.film-players{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(12px,1.6vw,22px);align-items:start}
+.film-player{width:100%;margin:0}
 .film-player video{display:block;width:100%;height:auto;border-radius:6px;background:#000;box-shadow:0 30px 60px rgba(0,0,0,.45)}
 .film-note{margin:14px 0 0;text-align:center;font-size:11.5px;letter-spacing:.04em;color:#8fa0bd;line-height:1.7}
 
@@ -418,15 +420,16 @@ dialog::backdrop{background:rgba(4,10,24,.7)}
   .programs{padding:22px 20px}
   .programs-list{grid-template-columns:1fr;gap:8px}
   .filmstrip{padding:84px 22px;gap:34px}
-  .film-player{width:min(100%,290px)}
+  .film-players{grid-template-columns:1fr;gap:22px}
+  .film-block{width:min(100%,300px)}
   .audience{padding:88px 22px}
   .audience-grid{grid-template-columns:1fr}
   .aud-card{padding:26px 20px}
   .shots{padding:84px 22px}
   .shots-wide{grid-template-columns:1fr;gap:10px}
   .shots-grid{grid-template-columns:repeat(2,1fr);gap:10px}
-  .shots-grid.three{grid-template-columns:1fr;gap:10px}
-  .shot.mat img{aspect-ratio:auto;object-fit:none;padding:0;border:0}
+  .shots-grid.three{grid-template-columns:1fr;gap:10px;align-items:start}
+  .shot.mat img{aspect-ratio:auto;object-fit:contain;padding:0;border:0;width:100%;height:auto}
   .steps{padding:84px 22px}
   .inset-frame{left:-5%;width:40%;padding:6px}
   .audience-slide{padding:8px}
@@ -633,19 +636,31 @@ dialog::backdrop{background:rgba(4,10,24,.7)}
   <div class="film-copy">
     <p class="eyebrow">BRAND FILM</p>
     <h2 class="reveal">영상으로 만나는<br>POWER NAP</h2>
-    <p class="reveal">10초 브랜드 콘셉트 영상입니다. 로봇 캐릭터와 뇌 그래픽으로 파워냅의 메시지를 담았습니다.</p>
+    <p class="reveal">브랜드 콘셉트 10초 영상과, 기기와 프로그램을 소개하는 25초 영상을 함께 담았습니다.</p>
     <ul class="film-chapters">
       <li>AI BRAIN SOLUTION 브랜드</li>
       <li>AI 두뇌훈련·뇌청소 메시지</li>
       <li>마스코트 캐릭터와 기기</li>
-      <li>10초 · 소리 포함</li>
+      <li>브랜드 10초 · 제품 소개 25초</li>
     </ul>
   </div>
-  <div class="film-player">
-    <video controls playsinline preload="metadata" poster="assets/brand-film-poster.jpg" width="720" height="1280">
-      <source src="assets/brand-film.mp4" type="video/mp4">
-      브라우저가 영상을 지원하지 않습니다. <a href="assets/brand-film.mp4">영상 열기</a>
-    </video>
+  <div class="film-block">
+    <div class="film-players">
+      <figure class="film-player">
+        <video controls playsinline preload="metadata" poster="assets/brand-film-poster.jpg" width="720" height="1280">
+          <source src="assets/brand-film.mp4" type="video/mp4">
+          브라우저가 영상을 지원하지 않습니다. <a href="assets/brand-film.mp4">영상 열기</a>
+        </video>
+        <figcaption class="film-note">브랜드 콘셉트 · 10초</figcaption>
+      </figure>
+      <figure class="film-player">
+        <video controls playsinline preload="metadata" poster="assets/promo-video-poster.jpg" width="406" height="720">
+          <source src="assets/promo-video.mp4" type="video/mp4">
+          브라우저가 영상을 지원하지 않습니다. <a href="assets/promo-video.mp4">영상 열기</a>
+        </video>
+        <figcaption class="film-note">제품 소개 · 25초</figcaption>
+      </figure>
+    </div>
     <p class="film-note">뇌 그래픽은 설명을 위한 표현이며 실제 측정 데이터가 아닙니다.</p>
   </div>
 </section>
@@ -750,6 +765,10 @@ dialog::backdrop{background:rgba(4,10,24,.7)}
       <figcaption>대표 소개 포스터</figcaption>
     </figure>
   </div>
+  <figure class="shots-single reveal">
+    <img src="assets/poster-qr.jpg" alt="파워냅 뇌건강 — 지금 체험해 보세요. QR코드를 스캔해 신청서를 작성하시면 되고, 문의는 02-2088-0632입니다" width="1672" height="1251" loading="lazy">
+    <figcaption>체험 신청 안내 — QR코드로 신청서 작성</figcaption>
+  </figure>
   <p class="principle-note">이미지는 파워냅 공식 제작물입니다. 포스터에 적힌 프로그램 이름(치매예방·인지건강 등)은 건강 관리 프로그램의 명칭이며, 질병의 예방이나 개선 효과를 보장하지 않습니다.</p>
 </section>
 
