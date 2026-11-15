@@ -86,9 +86,6 @@ img{max-width:100%}
 .hero-frame{position:relative;width:min(100%,640px)}
 .device-window{position:relative;width:100%;aspect-ratio:3/2;border-radius:14px;overflow:hidden;background:#070f1e;box-shadow:0 38px 60px rgba(0,0,0,.55),0 0 0 1px rgba(228,180,91,.30)}
 .device-window img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
-.float-card{position:absolute;right:-14px;top:-26px;z-index:2;display:flex;flex-direction:column;gap:2px;background:rgba(255,253,248,.96);color:#4d2e1d;padding:14px 20px;border-radius:3px;box-shadow:0 12px 35px rgba(0,0,0,.35);transform:rotate(2.5deg);font-family:var(--serif)}
-.float-card small{font-size:12px;letter-spacing:.02em;color:#7a6238}
-.float-card strong{font-size:22px;line-height:1.35}
 .scroll-cue{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);z-index:4;font-size:9px;letter-spacing:.3em;color:#8390a5;display:flex;flex-direction:column;align-items:center;gap:9px}
 .scroll-cue i{height:38px;width:1px;background:linear-gradient(#dba846,transparent)}
 
@@ -145,9 +142,10 @@ img{max-width:100%}
 .programs-list li{font-size:14.5px;color:#3f3a33;line-height:1.8;padding-left:20px;position:relative}
 .programs-list li:before{content:counter(list-item,decimal-leading-zero);position:absolute;left:0;top:0;font-size:11px;color:#a3722a;font-weight:800}
 .principle-note{max-width:1080px;margin:22px auto 0;font-size:12.5px;line-height:1.95;color:#6b6459}
-.principle-slide{max-width:980px;margin:0 auto 44px;background:#fff6e8;padding:12px;border:1px solid #e6d3b6;box-shadow:0 20px 44px rgba(23,31,48,.10)}
-.principle-slide img{display:block;width:100%;height:auto}
-.principle-slide figcaption{margin:10px 2px 0;font-size:12px;letter-spacing:.04em;color:#7f5716;font-weight:700;text-align:center}
+.principle-slide,.brand-slide{max-width:980px;margin:0 auto 44px;background:#fff6e8;padding:12px;border:1px solid #e6d3b6;box-shadow:0 20px 44px rgba(23,31,48,.10)}
+.principle-slide img,.brand-slide img{display:block;width:100%;height:auto}
+.principle-slide figcaption,.brand-slide figcaption{margin:10px 2px 0;font-size:12px;letter-spacing:.04em;color:#7f5716;font-weight:700;text-align:center}
+.principle .brand-slide{margin-top:46px}
 
 /* ---------- 체험 4단계 ---------- */
 .steps{background:linear-gradient(125deg,#061228,#0d2247 55%,#143156);color:#fff;padding:110px clamp(22px,7vw,110px);display:grid;grid-template-columns:.68fr 1fr;gap:clamp(36px,6vw,80px);align-items:center}
@@ -217,10 +215,6 @@ img{max-width:100%}
 .shots-head{margin-bottom:44px;max-width:660px}
 .shots-head h2{font-family:var(--serif);font-size:clamp(32px,3.8vw,52px);letter-spacing:-.055em;margin:0 0 18px;font-weight:700;line-height:1.3}
 .shots-head>p:last-child{margin:0;color:#6f665a;line-height:1.9;font-size:15.5px}
-.shots-wide{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
-.shot-wide{margin:0;background:#f7efe1;border:1px solid rgba(134,98,45,.16);padding:10px}
-.shot-wide img{display:block;width:100%;height:auto}
-.shot-wide figcaption{margin-top:10px;font-size:12px;letter-spacing:.04em;color:#7f5716;font-weight:700}
 .shots-single{max-width:980px;margin:14px auto;background:#f7efe1;border:1px solid rgba(134,98,45,.16);padding:10px}
 .shots-single img{display:block;width:100%;height:auto}
 .shots-single figcaption{margin-top:10px;font-size:12px;letter-spacing:.04em;color:#7f5716;font-weight:700;text-align:center}
@@ -373,9 +367,6 @@ dialog::backdrop{background:rgba(4,10,24,.7)}
   .hero-visual{height:auto;margin-top:44px;padding:10px 0 30px}
   .halo{width:112%;height:auto;aspect-ratio:16/9;filter:blur(20px)}
   .hero-frame{width:min(100%,560px)}
-  .float-card{right:-2px;top:-24px;transform:rotate(1.5deg);padding:10px 14px}
-  .float-card strong{font-size:17px}
-  .float-card small{font-size:10.5px}
   .scroll-cue{display:none}
   .value-section{grid-template-columns:1fr;gap:56px;align-items:start}
   .value-intro{max-width:560px}
@@ -417,6 +408,7 @@ dialog::backdrop{background:rgba(4,10,24,.7)}
   .recovery-frame img{border-radius:4px}
   .recovery-hint{display:block;margin:12px 2px 0;text-align:center;font-size:11.5px;line-height:1.7;color:#7b7266}
   .principle{padding:88px 22px}
+  .principle .brand-slide{margin-top:34px}
   .principle-head{margin-bottom:40px}
   .programs{padding:22px 20px}
   .programs-list{grid-template-columns:1fr;gap:8px}
@@ -427,7 +419,6 @@ dialog::backdrop{background:rgba(4,10,24,.7)}
   .audience-grid{grid-template-columns:1fr}
   .aud-card{padding:26px 20px}
   .shots{padding:84px 22px}
-  .shots-wide{grid-template-columns:1fr;gap:10px}
   .shots-grid{grid-template-columns:repeat(2,1fr);gap:10px}
   .shots-grid.three{grid-template-columns:1fr;gap:10px;align-items:start}
   .shot.mat img{aspect-ratio:auto;object-fit:contain;padding:0;border:0;width:100%;height:auto}
@@ -502,10 +493,6 @@ dialog::backdrop{background:rgba(4,10,24,.7)}
     <div class="hero-frame">
       <div class="device-window">
         <img src="assets/hero-device.jpg" alt="AI 로봇 마스코트와 POWER NAP 뉴로피드백 박스, 이마에 착용하는 무선 뇌파 측정 기기" width="1536" height="1024" fetchpriority="high">
-      </div>
-      <div class="float-card" aria-hidden="true">
-        <small>오늘의 깊은 수면이</small>
-        <strong>건강한 내일을</strong>
       </div>
     </div>
     <div class="scroll-cue" aria-hidden="true"><span>SCROLL</span><i></i></div>
@@ -617,6 +604,11 @@ dialog::backdrop{background:rgba(4,10,24,.7)}
       <p>측정과 피드백이 만나, 편안한 상태에 머무르는 연습을 30분 동안 이어갑니다. 끝나면 전후 그래프를 함께 봅니다.</p>
     </div>
   </div>
+
+  <figure class="brand-slide reveal">
+    <img src="assets/brand-slide-solution.jpg" alt="대한민국 뇌건강 회복 솔루션 — 수면회복, 치매예방 및 개선, 학습 능력 향상, AI 두뇌훈련 네 가지 축으로 구성된 파워냅 뇌건강 솔루션" width="1280" height="720" loading="lazy">
+    <figcaption>브랜드 슬라이드 — 대한민국 뇌건강 회복 솔루션</figcaption>
+  </figure>
 
   <div class="programs">
     <p class="programs-label">6가지 브레인케어 프로그램</p>
@@ -738,16 +730,6 @@ dialog::backdrop{background:rgba(4,10,24,.7)}
     <h2 class="reveal">제품과 프로그램 모습</h2>
     <p class="reveal">파워냅 기기와 훈련 장면, 공식 포스터를 브랜드 이미지로 담았습니다.</p>
   </div>
-  <div class="shots-wide">
-    <figure class="shot-wide reveal">
-      <img src="assets/brand-slide-solution.jpg" alt="대한민국 뇌건강 회복 솔루션 — 수면회복, 치매예방 및 개선, 학습 능력 향상, AI 두뇌훈련" width="1280" height="720" loading="lazy">
-      <figcaption>브랜드 슬라이드 — 대한민국 뇌건강 회복 솔루션</figcaption>
-    </figure>
-    <figure class="shot-wide reveal">
-      <img src="assets/brand-slide-programs.jpg" alt="핵심 프로그램 구성 — 수면회복, 치매예방·인지건강, AI 두뇌훈련, 심리정서 회복" width="1280" height="720" loading="lazy">
-      <figcaption>브랜드 슬라이드 — 핵심 프로그램 구성</figcaption>
-    </figure>
-  </div>
   <figure class="shots-single reveal">
     <img src="assets/brand-poster-sleep.jpg" alt="수면회복 프로그램 — 뇌파 안정화, 수면 질 개선, 스트레스 완화" width="1100" height="619" loading="lazy">
     <figcaption>수면회복 프로그램 — 뇌를 회복하면 삶이 달라집니다</figcaption>
@@ -780,6 +762,11 @@ dialog::backdrop{background:rgba(4,10,24,.7)}
     <h2 class="reveal">체험 프로그램과 비용</h2>
     <p class="reveal">체험은 1회 30,000원, 사전 예약제로 운영합니다. 기기 구매는 방문 상담 또는 전화로 문의해 주세요.</p>
   </div>
+
+  <figure class="brand-slide reveal">
+    <img src="assets/brand-slide-programs.jpg" alt="핵심 프로그램 구성 — 01 수면회복(뇌성도), 02 치매예방·인지건강, 03 AI 두뇌훈련, 04 심리정서 회복으로 기기 맞춤형 AI 뇌건강 프로그램 구성" width="1280" height="720" loading="lazy">
+    <figcaption>브랜드 슬라이드 — 핵심 프로그램 구성</figcaption>
+  </figure>
 
   <div class="info-grid">
     <div class="info-block">
