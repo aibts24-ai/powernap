@@ -121,6 +121,8 @@ img{max-width:100%}
 .recovery-lead{margin:0;color:#6f665a;font-size:15.5px;line-height:1.9}
 .recovery-frame{margin:0 auto;width:min(100%,1160px);padding:clamp(9px,1.2vw,16px);background:#fffdf8;border:1px solid rgba(134,98,45,.20);border-radius:16px;box-shadow:0 26px 56px rgba(23,31,48,.13)}
 .recovery-frame img{display:block;width:100%;height:auto;border-radius:6px}
+.recovery-zoom{display:block;border-radius:6px;line-height:0}
+.recovery-hint{display:none}
 
 /* ---------- 원리 ---------- */
 .principle{background:var(--white);padding:120px clamp(22px,7vw,110px);border-top:1px solid #ecdfc9}
@@ -410,6 +412,7 @@ dialog::backdrop{background:rgba(4,10,24,.7)}
   .recovery-lead{font-size:14.5px}
   .recovery-frame{padding:7px;border-radius:12px;box-shadow:0 16px 34px rgba(23,31,48,.14)}
   .recovery-frame img{border-radius:4px}
+  .recovery-hint{display:block;margin:12px 2px 0;text-align:center;font-size:11px;line-height:1.7;color:#8b8175}
   .principle{padding:88px 22px}
   .principle-head{margin-bottom:40px}
   .programs{padding:22px 20px}
@@ -550,8 +553,11 @@ dialog::backdrop{background:rgba(4,10,24,.7)}
     <p class="recovery-lead reveal">수면의 질이 달라지면, 내일의 집중력과 컨디션도 함께 달라집니다.</p>
   </div>
   <figure class="recovery-frame reveal">
-    <img src="assets/brain-recovery.jpg" alt="뇌는 잠자는 동안 회복됩니다 — 충분한 수면으로 회복되는 뇌, 수면 부족이 반복되면 피로가 쌓이는 뇌, 만성적인 수면 부족으로 회복이 필요한 뇌를 나란히 비교한 파워냅 인포그래픽" width="1536" height="1024" loading="lazy">
+    <a class="recovery-zoom" href="assets/brain-recovery.jpg" target="_blank" rel="noopener">
+      <img src="assets/brain-recovery.jpg" alt="뇌는 잠자는 동안 회복됩니다 — 충분한 수면으로 회복되는 뇌, 수면 부족이 반복되면 피로가 쌓이는 뇌, 만성적인 수면 부족으로 회복이 필요한 뇌를 나란히 비교한 파워냅 인포그래픽" width="1536" height="1024" loading="lazy">
+    </a>
   </figure>
+  <p class="recovery-hint">사진을 누르면 원본 크기로 볼 수 있습니다.</p>
 </section>
 
 <!-- 체험 4단계 -->
