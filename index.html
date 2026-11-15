@@ -113,6 +113,15 @@ img{max-width:100%}
 .value-card p{font-size:14px;line-height:1.85;color:#6f665a;margin:0}
 .value-card.featured p{color:#b7c0cf}
 
+/* ---------- 뇌 회복 (수면과 회복) ---------- */
+.recovery{background:linear-gradient(180deg,#f2e6d3 0%,#f8eedd 26%,#fbf4e8 68%,#fffdf8 100%);padding:104px clamp(22px,7vw,110px) 110px}
+.recovery-head{max-width:800px;margin:0 auto 44px;text-align:center}
+.recovery-head h2{font-family:var(--serif);font-size:clamp(27px,3.1vw,40px);line-height:1.36;letter-spacing:-.05em;margin:0 0 16px;font-weight:700}
+.recovery-head h2 span{color:#0c7543}
+.recovery-lead{margin:0;color:#6f665a;font-size:15.5px;line-height:1.9}
+.recovery-frame{margin:0 auto;width:min(100%,1160px);padding:clamp(9px,1.2vw,16px);background:#fffdf8;border:1px solid rgba(134,98,45,.20);border-radius:16px;box-shadow:0 26px 56px rgba(23,31,48,.13)}
+.recovery-frame img{display:block;width:100%;height:auto;border-radius:6px}
+
 /* ---------- 원리 ---------- */
 .principle{background:var(--white);padding:120px clamp(22px,7vw,110px);border-top:1px solid #ecdfc9}
 .principle-head{max-width:780px;margin:0 auto 54px;text-align:center}
@@ -376,6 +385,7 @@ dialog::backdrop{background:rgba(4,10,24,.7)}
   .info-grid{grid-template-columns:1fr}
   .contact{grid-template-columns:1fr}
   .programs-list{grid-template-columns:repeat(2,1fr)}
+  .recovery{padding:88px clamp(22px,7vw,110px) 92px}
   .trust{grid-template-columns:1fr}
 }
 @media(max-width:740px){
@@ -395,6 +405,11 @@ dialog::backdrop{background:rgba(4,10,24,.7)}
   .value-grid{grid-template-columns:1fr}
   .value-card{min-height:225px}
   .value-card.featured{transform:none}
+  .recovery{padding:76px 16px 80px}
+  .recovery-head{margin-bottom:30px}
+  .recovery-lead{font-size:14.5px}
+  .recovery-frame{padding:7px;border-radius:12px;box-shadow:0 16px 34px rgba(23,31,48,.14)}
+  .recovery-frame img{border-radius:4px}
   .principle{padding:88px 22px}
   .principle-head{margin-bottom:40px}
   .programs{padding:22px 20px}
@@ -525,6 +540,18 @@ dialog::backdrop{background:rgba(4,10,24,.7)}
       <p>측정부터 해석, 생활 습관 안내까지 대표가 직접 살펴봅니다. 조용한 분리 공간에서 한 분만 모십니다.</p>
     </article>
   </div>
+</section>
+
+<!-- 뇌 회복 -->
+<section class="recovery" id="recovery">
+  <div class="recovery-head">
+    <p class="section-label">SLEEP &amp; RECOVERY</p>
+    <h2 class="reveal">매일의 잠이,<br><span>내일의 뇌</span>를 만듭니다</h2>
+    <p class="recovery-lead reveal">수면의 질이 달라지면, 내일의 집중력과 컨디션도 함께 달라집니다.</p>
+  </div>
+  <figure class="recovery-frame reveal">
+    <img src="assets/brain-recovery.jpg" alt="뇌는 잠자는 동안 회복됩니다 — 충분한 수면으로 회복되는 뇌, 수면 부족이 반복되면 피로가 쌓이는 뇌, 만성적인 수면 부족으로 회복이 필요한 뇌를 나란히 비교한 파워냅 인포그래픽" width="1536" height="1024" loading="lazy">
+  </figure>
 </section>
 
 <!-- 체험 4단계 -->
