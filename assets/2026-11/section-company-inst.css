@@ -1,2 +1,0 @@
-.w .bk{display:grid;grid-template-columns:250px 1fr;gap:40px;align-items:center;margin-top:52px;padding-top:44px;border-top:1px solid var(--line)}
-@media(max-width:900px){.w .bk{grid-template-columns:1fr;gap:26px;margin-top:40px;padding-top:32px}}
