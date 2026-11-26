@@ -2,3 +2,8 @@
 
 .sh-ph.sh-stack{align-self:stretch;background:#fff}.sh-ph.sh-stack img{display:block;width:100%;height:auto;max-height:none;aspect-ratio:auto;object-fit:contain;background:#fff;border-top:1px solid #F1EDE3}.sh-ph.sh-stack img:first-child{border-top:0}
 .sh-grid{align-items:start}
+.sh-fit{background:#fff}
+.sh-fit img{width:100%;height:auto;aspect-ratio:auto;object-fit:contain;display:block}
+.sh-note-t{font-size:15px;font-weight:800;color:#0d1b3e;margin:0 0 8px;letter-spacing:-.01em}
+.sh-note{font-size:13.5px;line-height:1.75;color:#42506a;margin:0}
+.sh-src{font-size:12px;color:#8a93a5;margin:10px 0 0}
