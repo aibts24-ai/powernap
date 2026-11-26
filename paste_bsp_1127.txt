@@ -1,0 +1,1 @@
+<nav class="etabs"><a class="on" href="/pages/bsp">두뇌전문가 과정</a><a href="/pages/cert">자격증 안내</a><a href="/pages/startup">창업안내</a></nav>
