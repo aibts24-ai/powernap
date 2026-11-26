@@ -1,0 +1,137 @@
+<style>
+.p{--bg:#FFFFFF;--bg2:#F8FAFD;--ink:#0D1B3E;--sub:#51607E;--ln:#E2E8F0;--bl:#1D4ED8;--gd:#B8964C;--gt:#8A6B2E;--cd:#FFFFFF;--bd:#F4F8FF;--hr:linear-gradient(135deg,#FFFFFF 0%,#F4F8FF 55%,#EAF2FD 100%);--sh:0 16px 40px rgba(13,27,62,.08);width:100vw;margin-left:calc(50% - 50vw);overflow-x:clip;background:var(--bg);color:var(--ink);font-family:Pretendard,'Malgun Gothic',sans-serif;line-height:1.7;word-break:keep-all}
+.p *{box-sizing:border-box}
+.p a{text-decoration:none;color:inherit}
+.p:has(#d:checked){--bg:#071432;--bg2:#0D1B3E;--ink:#FFFFFF;--sub:#B9C4DA;--ln:rgba(217,190,134,.24);--bl:#2F6BFF;--gd:#D9BE86;--gt:#E7D3A4;--cd:rgba(255,255,255,.05);--bd:rgba(255,255,255,.03);--hr:linear-gradient(135deg,#071432 0%,#0D1B3E 58%,#0A2148 100%);--sh:0 18px 46px rgba(0,0,0,.38)}
+.i{max-width:1180px;margin:0 auto;padding:0 clamp(16px,4vw,40px)}
+.hero{background:var(--hr);border-bottom:1px solid var(--ln)}
+.tp{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;padding:26px 0 0}
+.eb,.hd{display:flex;align-items:center;gap:12px;font-size:11.5px;font-weight:800;letter-spacing:.2em;color:var(--gt)}
+.eb i,.hd i{width:34px;height:1px;background:var(--gd)}
+.tg{display:flex;gap:2px;padding:3px;border:1px solid var(--ln);border-radius:99px;background:var(--cd)}
+.tg input{position:absolute;opacity:0}
+.tg label{padding:8px 14px;border-radius:99px;font-size:12.5px;font-weight:800;color:var(--sub);cursor:pointer;white-space:nowrap}
+.tg input:checked+label{background:var(--ink);color:var(--bg)}
+.hg{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,56px);align-items:center;padding:clamp(30px,3.6vw,48px) 0 clamp(34px,4vw,54px)}
+h1{margin:0;font-size:clamp(28px,3vw,44px);line-height:1.3;font-weight:800;letter-spacing:-.02em}
+h1 em{font-style:normal;color:var(--gt)}
+.ld{margin:18px 0 0;font-size:clamp(14px,1.05vw,16px);color:var(--sub);line-height:1.85}
+.ld b{color:var(--ink)}
+.ch{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.ch span{padding:8px 13px;border:1px solid var(--ln);border-radius:99px;background:var(--bd);font-size:12px;font-weight:700;color:var(--gt)}
+.bt{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.b1,.b2{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 26px;border-radius:10px;font-size:15px;font-weight:800}
+.b1{background:var(--bl);color:#FFFFFF;box-shadow:0 10px 24px rgba(29,78,216,.22)}
+.b2{border:1px solid var(--ln);background:var(--cd)}
+.hi img{display:block;width:100%;height:auto;aspect-ratio:1672/941;object-fit:cover;border-radius:20px;border:1px solid var(--ln);box-shadow:var(--sh)}
+.cap{margin-top:14px;font-size:13px;color:var(--sub)}
+.cap b{color:var(--ink)}
+.cap span{display:block;margin-top:4px;font-size:12.5px;font-weight:700;color:var(--gt)}
+.tk{background:var(--bg2);border-top:1px solid var(--ln)}
+.t4{display:grid;grid-template-columns:repeat(4,1fr)}
+.t4 div{padding:22px 18px;border-left:1px solid var(--ln)}
+.t4 div:first-child{border-left:0}
+.t4 b{display:block;font-size:14px}
+.t4 span{display:block;margin-top:6px;font-size:12.5px;color:var(--sub)}
+.s{padding:clamp(46px,5.6vw,78px) 0}
+.s.alt{background:var(--bg2)}
+.s h2{margin:14px 0 0;font-size:clamp(23px,2.6vw,35px);line-height:1.32;font-weight:800;letter-spacing:-.02em}
+.sb{margin:12px 0 0;font-size:14.5px;color:var(--sub)}
+.cs,.c3{display:grid;gap:16px;margin-top:clamp(22px,3vw,36px)}
+.cs{grid-template-columns:1fr 1fr}
+.c3{grid-template-columns:repeat(3,1fr)}
+.k,.c3 a,.c3 div{display:block;border:1px solid var(--ln);border-radius:14px;padding:clamp(20px,2.2vw,26px);background:var(--cd);box-shadow:var(--sh)}
+.k em,.c3 em{font-style:normal;font-size:12px;font-weight:800;letter-spacing:.16em;color:var(--gt)}
+.k h3,.c3 b{display:block;margin:10px 0 0;font-size:18px;font-weight:800;line-height:1.45}
+.k p,.c3 p{margin:8px 0 0;font-size:14px;color:var(--sub);line-height:1.8}
+.nt,.cb{margin-top:20px;border:1px solid var(--ln);border-radius:12px;background:var(--bd)}
+.nt{padding:18px 22px;border-left:3px solid var(--gd)}
+.nt p{margin:0;font-size:13.5px;color:var(--sub);line-height:1.8}
+.nt b{color:var(--ink)}
+.pg{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(24px,3.4vw,48px);align-items:start;margin-top:32px}
+.st{display:flex;gap:16px;padding:18px 0;border-top:1px solid var(--ln)}
+.st:first-child{border-top:0;padding-top:0}
+.st span{flex:0 0 auto;font-size:12.5px;font-weight:800;letter-spacing:.12em;color:var(--gt);padding-top:4px}
+.st h3{margin:0;font-size:17px;font-weight:800;line-height:1.5}
+.st p{margin:6px 0 0;font-size:14px;color:var(--sub);line-height:1.8}
+.ph img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--ln);box-shadow:var(--sh)}
+.pc{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;margin-top:12px;font-size:12px;color:var(--sub)}
+.pc b{color:var(--gt);white-space:nowrap}
+.cb{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px;margin-top:24px;padding:clamp(22px,2.6vw,30px)}
+.cb p{margin:0;font-size:17px;font-weight:800;line-height:1.6}
+.cb p span{display:block;margin-top:6px;font-size:13px;font-weight:500;color:var(--sub)}
+.cb a{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 26px;border-radius:10px;font-size:14.5px;font-weight:800;background:var(--bl);color:#FFFFFF;white-space:nowrap}
+@media(max-width:900px){.hg,.cs,.pg,.c3{grid-template-columns:1fr}.hg{padding:28px 0 36px}.t4{grid-template-columns:1fr 1fr}.t4 div:nth-child(3){border-left:0}.t4 div:nth-child(n+3){border-top:1px solid var(--ln)}.b1,.b2{flex:1 1 100%}.tp{justify-content:flex-end}.eb{display:none}}
+</style>
+<div class="p">
+<section class="hero">
+<div class="i">
+<div class="tp">
+<div class="eb"><i></i>AI BRAIN SOLUTION · EEG-BASED COUNSELING</div>
+<div class="tg" role="group" aria-label="화면 테마"><input type="radio" name="cnt" id="l" checked><label for="l">☀ 라이트</label><input type="radio" name="cnt" id="d"><label for="d">☾ 다크</label></div>
+</div>
+<div class="hg">
+<div>
+<h1>AI 뇌파 분석 기반<br><em>과학적 심리상담</em></h1>
+<p class="ld">(주)에이아이브레인솔루션이 직접 개발한 <b>뇌파(EEG) 측정 · AI 뉴로피드백 기술</b>과 <b>심리상담학 박사</b>의 1:1 상담을 결합했습니다. 느낌에만 의존하지 않고, 객관적인 두뇌 데이터로 <b>불면증 · 스트레스 · 우울 · 불안 · 집중력</b> 케어의 방향을 함께 설계합니다.</p>
+<div class="ch"><span>자체 개발 EEG 기술</span><span>KC 적합등록 뉴로브레인 NB0001</span><span>AI 뇌파 정량 분석</span></div>
+<div class="bt"><a class="b1" href="http://pf.kakao.com/_xfUKxbn/chat" target="_blank" rel="noopener">카카오채널 1:1 상담</a><a class="b2" href="tel:0220880632">02-2088-0632</a></div>
+</div>
+<div class="hi">
+<img src="https://aibts24-ai.github.io/powernap/assets/2026-11/company-ceo-11680.jpg" alt="우수미 대표 — 뉴로브레인 두뇌훈련 뇌기능 상담실" width="1672" height="941">
+<div class="cap"><b>우수미 대표</b> · 파워냅 뇌건강센터<span>심리상담학 박사 · 2024 대한민국 명인 인증 (AI 두뇌훈련 심리상담 분야)</span></div>
+</div>
+</div>
+</div>
+<div class="tk"><div class="i"><div class="t4">
+<div><b>자체 개발 EEG 기술</b><span>뇌파(EEG) 측정 · AI 뉴로피드백</span></div>
+<div><b>KC 적합등록</b><span>뉴로브레인 NB0001 (뇌파 측정 장비)</span></div>
+<div><b>2024 대한민국 명인 인증</b><span>AI 두뇌훈련 심리상담 분야</span></div>
+<div><b>특허 출원 3건</b><span>AI 뇌파 분석 기술</span></div>
+</div></div></div>
+</section><div class="bn"></div>
+<section class="s">
+<div class="i">
+<div class="hd"><i></i><p>CARE AREAS</p></div>
+<h2>4대 상담 케어 영역</h2>
+<p class="sb">생활 속 마음의 부담을 영역별로 나누어, 뇌파 데이터와 상담으로 함께 살펴봅니다.</p>
+<div class="ch"><span>불면증</span><span>우울 · 불안</span><span>스트레스</span><span>집중력 향상</span><span>기억력 · 인지</span></div>
+<div class="cs">
+<div class="k"><em>01</em><h3>성인 · 직장인 스트레스 케어</h3><p>만성 스트레스와 감정 소진, 우울 · 불안으로 이어지는 마음의 피로를 살펴보고 안정과 회복의 흐름을 함께 만듭니다.</p></div>
+<div class="k"><em>02</em><h3>수면 · 불면증 케어</h3><p>잠들기 어려운 밤, 얕은 잠이 이어지는 불면증을 뇌파 데이터와 생활 리듬 코칭으로 함께 관리합니다.</p></div>
+<div class="k"><em>03</em><h3>청소년 학습 · 정서 상담</h3><p>집중력 향상과 학업 스트레스, 진로와 관계의 고민을 청소년 눈높이에서 함께 나눕니다.</p></div>
+<div class="k"><em>04</em><h3>시니어 인지 · 정서 케어</h3><p>활력 있는 두뇌 활동과 정서적 안정을 함께 돌보며, 기억력 · 인지 기능과 마음의 균형을 챙깁니다.</p></div>
+</div>
+<div class="nt"><p><b>상담 전, 데이터로 먼저 확인합니다.</b> 불면증 · 스트레스 · 우울 · 불안 · 집중력 · 인지 상태를 담은 사전 체크리스트와 뉴로브레인 뇌파(EEG) 정량 분석으로 상담 방향을 구체화합니다.</p></div>
+</div>
+</section>
+<section class="s alt">
+<div class="i">
+<div class="hd"><i></i><p>PROCESS</p></div>
+<h2>뇌기능 분석 연계 4단계 절차</h2>
+<p class="sb">상담은 감으로 끝나지 않습니다. 자체 개발 뇌파 기술로 확인하고, 박사의 상담과 케어로 이어집니다.</p>
+<div class="pv"><img src="//aibts24-ai.github.io/powernap/i/s.jpg" alt="4단계 절차"><img src="//aibts24-ai.github.io/powernap/i/sm.jpg" alt="4단계 절차"></div><div class="pg">
+<div>
+<div class="st"><span>01</span><div><h3>사전 체크리스트</h3><p>수면 · 스트레스 · 집중력 · 정서 상태를 생활 중심 설문으로 정리합니다.</p></div></div>
+<div class="st"><span>02</span><div><h3>뇌기능 분석(EEG)</h3><p>자체 개발 뉴로브레인으로 뇌파를 측정하고, AI가 주파수 · 각성도 · 좌우뇌 균형을 정량 분석합니다.</p></div></div>
+<div class="st"><span>03</span><div><h3>1:1 박사 심층 상담</h3><p>분석 리포트와 생활 맥락을 함께 검토하며 상담 목표와 방향을 구체화합니다.</p></div></div>
+<div class="st"><span>04</span><div><h3>맞춤 상담 · 케어 플랜</h3><p>뇌기능 분석 결과에 맞춘 뉴로피드백 훈련과 수면 · 생활 리듬 코칭으로 상담 이후의 계획을 함께 세웁니다.</p></div></div>
+</div>
+<div class="ph"><img src="https://powernap.kr/storage/upload_images/OYi1gh6ZELA733vv6G2PlkTFF3DsOpBLkUp3Liey.jpg" alt="파워냅 뇌건강센터 상담실과 뇌파 측정 공간" width="1536" height="1024"><div class="pc"><span>파워냅 뇌건강센터 · 서울 서초 우면</span><b>EEG · AI 정량 분석</b></div></div>
+</div>
+</div>
+</section>
+<section class="s">
+<div class="i">
+<div class="hd"><i></i><p>CONTACT</p></div>
+<h2>상담 예약 안내</h2>
+<p class="sb">편하신 방법으로 문의해 주세요. 뇌파 분석과 상담 일정을 함께 안내해 드립니다.</p>
+<div class="c3">
+<a href="http://pf.kakao.com/_xfUKxbn/chat" target="_blank" rel="noopener"><em>KAKAO</em><b>카카오채널 1:1 상담</b><p>채널에서 바로 문의하고 예약할 수 있습니다.</p></a>
+<a href="tel:0220880632"><em>TEL</em><b>02-2088-0632</b><p>전화로 상담 일정과 준비 사항을 안내해 드립니다.</p></a>
+<div><em>LOCATION</em><b>서울 서초구 바우뫼로7길 8</b><p>우면종합상가 702호 · 파워냅 뇌건강센터</p></div>
+</div>
+<div class="cb"><p>뇌파로 확인하고, 상담으로 이어갑니다.<span>(주)에이아이브레인솔루션 · 파워냅 뇌건강센터</span></p><a href="http://pf.kakao.com/_xfUKxbn/chat" target="_blank" rel="noopener">카카오채널로 예약하기</a></div>
+</div>
+</section>
+<style>.cn2{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:1060px;margin:0 auto 50px;padding:0 18px}.cn2 img{width:100%;height:auto;display:block;border-radius:14px}@media(max-width:760px){.cn2{grid-template-columns:1fr}}</style><div class="cn2"><img src="https://aibts24-ai.github.io/powernap/assets/2026-11/counsel-nb-12126.jpg" alt="뉴로브레인 뇌기능 검사"><img src="https://aibts24-ai.github.io/powernap/assets/2026-11/counsel-nf-12125.jpg" alt="뉴로피드백 두뇌훈련"></div></div>
