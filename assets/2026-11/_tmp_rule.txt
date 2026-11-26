@@ -1,2 +1,1 @@
-
-.w .so:before{content:"";display:block;grid-column:1/-1;max-width:900px;margin:0 auto;aspect-ratio:3/4;background:url("https://aibts24-ai.github.io/powernap/assets/2026-11/company-tech-solutions-12640.jpg") center/contain no-repeat;border-radius:16px}
+.w .so:before{content:"";grid-column:1/-1;width:100%;max-width:900px;margin:0 auto;aspect-ratio:3/4;background:url("https://aibts24-ai.github.io/powernap/assets/2026-11/company-tech-solutions-12640.jpg") center/contain no-repeat;border-radius:16px}
