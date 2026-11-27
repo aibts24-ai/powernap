@@ -23,6 +23,7 @@
 .nb-two{display:flex;gap:40px;align-items:flex-start}
 .nb-two>*{flex:1 1 0;min-width:0}
 .nb-two-rev{flex-direction:row-reverse}
+.nb-two-mid{align-items:center}
 .nb-steps{display:flex;flex-direction:column;gap:16px}
 .nb-step{display:flex;gap:16px;padding:22px 22px;border:1px solid #DCE8F7;border-radius:14px;background:#fff}
 .nb-no{display:inline-flex;align-items:center;justify-content:center;flex:0 0 38px;width:38px;height:38px;border-radius:50%;background:#0E2340;color:#fff;font-size:13px;font-weight:800}
