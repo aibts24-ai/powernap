@@ -30,6 +30,7 @@
 .nb-step p{margin:0;font-size:14px;line-height:1.72;color:#4C5E75}
 .nb-step b{color:#1B4F8F}
 .nb-fig{margin:0}
+.nb-pc .nb-fig{max-width:440px;margin:0 auto}
 .nb-fig img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid #E3ECF7;background:#fff}
 .nb-fig figcaption{margin-top:10px;font-size:12.5px;color:#7A8899;text-align:center}
 .nb-figcol{display:flex;flex-direction:column;gap:18px}
@@ -48,6 +49,10 @@
 .nb-list{margin:0;padding-left:18px;font-size:14px;line-height:1.9;color:#4C5E75}
 .nb-case{padding:20px 22px;border-radius:14px;background:#FBF7EF;border:1px solid #EBDDBE}
 .nb-case b{display:block;margin-bottom:8px;font-size:14.5px;color:#8A6A2E}
+.nb-use{padding:20px 22px;border-radius:14px;background:#F7FAFE;border:1px solid #DCE8F7}
+.nb-use b{display:block;margin-bottom:12px;font-size:14.5px;font-weight:800;color:#13325C}
+.nb-use ul{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.nb-use li{padding:8px 14px;border-radius:999px;background:#fff;border:1px solid #D3E1F2;font-size:13px;font-weight:700;color:#1B4F8F}
 .nb-case p{margin:0;font-size:13.5px;line-height:1.78;color:#5D5240}
 .nb-3col{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .nb-card{padding:26px 22px;border-radius:15px;background:#fff;border:1px solid #DCE8F7}
