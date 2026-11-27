@@ -14,25 +14,24 @@
 .w .ld b{color:var(--tx)}
 .w .hero{padding:34px 0 8px}
 .w .hero .bn{width:100%;border-radius:18px;box-shadow:0 26px 56px -34px rgba(11,27,56,.5)}
-.w .hero .cap{font-size:13px;color:var(--mut);text-align:center;margin-top:14px}
 .w .g2{display:grid;grid-template-columns:1.02fr .98fr;gap:44px;align-items:start}
 .w .pt{font-size:14.5px;line-height:1.9;color:var(--mut);margin-top:14px}
 .w .pt b{color:var(--tx);font-weight:700}
-.w .chk{display:grid;gap:10px;margin-top:22px}
+.w .chk{display:grid;gap:10px;margin-top:6px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px 24px}
 .w .chk li{font-size:14px;line-height:1.6;color:var(--tx);padding-left:26px;position:relative}
 .w .chk li:before{content:"";position:absolute;left:0;top:7px;width:13px;height:13px;border-radius:50%;background:linear-gradient(135deg,var(--gold),#E3C88C)}
-.w .dir{display:grid;grid-template-columns:360px 1fr;gap:44px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:34px;box-shadow:0 26px 60px -46px rgba(11,27,56,.55)}
-.w .dir img{width:100%;border-radius:12px;box-shadow:0 18px 44px -26px rgba(13,27,62,.5)}
-.w .dir .nm{font-size:22px;font-weight:800;letter-spacing:.04em}
-.w .dir .po{font-size:13.5px;font-weight:700;color:var(--gold);margin-top:4px}
-.w .dir .og{font-size:13.5px;color:var(--mut);margin-top:4px}
-.w .dir ul{display:grid;gap:7px;margin-top:18px;font-size:13.5px;line-height:1.55;color:var(--mut)}
+.w .dirv{text-align:center}
+.w .dirv .dp{width:100%;max-width:390px;margin:0 auto;border-radius:10px;box-shadow:0 22px 50px -30px rgba(13,27,62,.55)}
+.w .dirv .nm{font-size:24px;font-weight:800;letter-spacing:.05em;margin-top:26px}
+.w .dirv .po{font-size:13.5px;font-weight:700;color:var(--gold);margin-top:6px}
+.w .dirv .og{font-size:13.5px;color:var(--mut);margin-top:5px}
+.w .dirv .cvs{display:inline-grid;gap:7px;margin-top:18px;font-size:13.5px;line-height:1.6;color:var(--mut);text-align:left}
 @media(max-width:900px){
 .w .i{padding:0 20px}
 .w .s{padding:52px 0}
-.w .g2{grid-template-columns:1fr;gap:28px}
-.w .dir{grid-template-columns:1fr;gap:26px;padding:24px}
-.w .dir img{max-width:320px;margin:0 auto}
+.w .g2{grid-template-columns:1fr;gap:24px}
 .w .hero{padding:22px 0 4px}
 .w .hero .bn{border-radius:12px}
+.w .dirv .dp{max-width:300px}
+.w .dirv .nm{font-size:21px}
 }

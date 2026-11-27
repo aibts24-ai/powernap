@@ -2,7 +2,6 @@
 <section class="hero">
 <div class="i">
 <img class="bn" src="https://aibts24-ai.github.io/powernap/assets/2026-11/company-institute-banner-12963.jpg" alt="AI뇌인지융합연구 · (주)에이아이브레인솔루션 기업부설연구소" width="1672" height="941">
-<p class="cap">세상의 변화 속에서, 우리는 ‘뇌의 행복’을 연구합니다.</p>
 </div>
 </section>
 <section class="s">
@@ -31,21 +30,19 @@
 <div class="i">
 <p class="eb">02 DIRECTOR</p>
 <h2>연구소장</h2>
-<div class="dir">
-<div><img src="https://aibts24-ai.github.io/powernap/assets/2026-11/kim-kiyong-powernap.jpg" alt="김기용 · 서울초이스병원 원장, (주)에이아이브레인솔루션 기업부설연구소 연구소장" width="793" height="1984"></div>
-<div>
+<div class="dirv">
+<img class="dp" src="https://aibts24-ai.github.io/powernap/assets/2026-11/kim-kiyong-powernap.jpg" alt="김기용 · 서울초이스병원 원장, (주)에이아이브레인솔루션 기업부설연구소 연구소장" width="793" height="1984">
 <p class="nm">김기용</p>
 <p class="po">서울초이스병원 원장 (現)</p>
 <p class="og">(주)에이아이브레인솔루션 기업부설연구소 연구소장</p>
-<ul>
-<li>· 연세대학교 의과대학 졸업</li>
-<li>· 아주대학교 신경외과 교수</li>
-<li>· 의학박사 (M.D., Ph.D.)</li>
-<li>· 미국 클리블랜드 클리닉 연수</li>
-<li>· 성베드로병원 · 안세병원 척추센터 근무</li>
-<li>· 태성병원 · 사랑병원 병원장 역임</li>
+<ul class="cvs">
+<li>연세대학교 의과대학 졸업</li>
+<li>아주대학교 신경외과 교수</li>
+<li>의학박사 (M.D., Ph.D.)</li>
+<li>미국 클리블랜드 클리닉 연수</li>
+<li>성베드로병원 · 안세병원 척추센터 근무</li>
+<li>태성병원 · 사랑병원 병원장 역임</li>
 </ul>
-</div>
 </div>
 </div>
 </section>
