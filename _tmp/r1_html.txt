@@ -6,8 +6,8 @@
 </section>
 <section class="s">
 <div class="i">
-<p class="eb">01 ABOUT THE INSTITUTE</p>
-<h2>AI 뇌인지융합연구원</h2>
+<p class="eb">01 RESEARCH</p>
+<h2>뇌과학 연구</h2>
 <div class="g2">
 <div>
 <p class="pt">AI 뇌인지융합연구원은 <b>(주)에이아이브레인솔루션의 기업부설연구소</b>입니다. 뇌파(EEG) 측정과 인공지능 분석을 결합해 뇌 기능과 수면·인지·정서의 변화를 연구합니다.</p>
@@ -24,33 +24,19 @@
 </ul>
 </div>
 </div>
+<div class="grp">
+<p class="tt"><span>논문 2건</span> 박사학위 논문 · 학술지 제1저자</p>
+<ul class="li2">
+<li>《뇌기능의 향상과 수면안정에 대한 뉴로피드백의 과학적 연구》<em>KSU대학교 심리상담학 박사학위 논문 · 2025.08</em></li>
+<li>《전기화학 체외 탄소 나노튜브 문신 센싱을 이용한 통증 진단 분석》<em>한국전기화학회지 제1저자 논문 · Vol. 28, No. 4 · 2025.10</em></li>
+</ul>
 </div>
-</section>
-<section class="s alt">
-<div class="i">
-<p class="eb">02 RESEARCH TEAM</p>
-<h2>연구진</h2>
-<div class="chef">
-<img class="cp" src="https://aibts24-ai.github.io/powernap/assets/2026-11/company-ceo-11669.jpg" alt="우수미 · AI 뇌인지융합연구원 원장, (주)에이아이브레인솔루션 대표이사" width="866" height="1250">
-<div>
-<p class="nm">우수미</p>
-<p class="po">AI 뇌인지융합연구원 원장</p>
-<p class="og">(주)에이아이브레인솔루션 대표이사 · 심리상담학 박사</p>
-<p class="pt">뇌파와 뉴로피드백 연구를 이끌며, 연구 결과가 센터의 훈련과 제품으로 이어지도록 설계합니다.</p>
-</div>
-</div>
-<div class="dirv">
-<img class="dp" src="https://aibts24-ai.github.io/powernap/assets/2026-11/kim-kiyong-powernap.jpg" alt="김기용 · 서울초이스병원 원장, (주)에이아이브레인솔루션 기업부설연구소 연구소장" width="793" height="1984">
-<p class="nm">김기용</p>
-<p class="po">서울초이스병원 원장 (現)</p>
-<p class="og">(주)에이아이브레인솔루션 기업부설연구소 연구소장</p>
-<ul class="cvs">
-<li>연세대학교 의과대학 졸업</li>
-<li>아주대학교 신경외과 교수</li>
-<li>의학박사 (M.D., Ph.D.)</li>
-<li>미국 클리블랜드 클리닉 연수</li>
-<li>성베드로병원 · 안세병원 척추센터 근무</li>
-<li>태성병원 · 사랑병원 병원장 역임</li>
+<div class="grp">
+<p class="tt"><span>특허 출원 3건</span> 뇌파 · AI 융합 기술</p>
+<ul class="li2">
+<li>인공지능 기반 뇌파 인지·정서 상태 융합 분석을 이용한 치매·불면증 예측 시스템</li>
+<li>설명가능 AI(XAI)를 이용한 뇌파 기반 신경인지 위험도 분석 방법 및 시스템</li>
+<li>컬러테라피 패턴과 에너지 방출 접착층을 포함하는 기능성 스티커 및 그 제조방법</li>
 </ul>
 </div>
 </div>
