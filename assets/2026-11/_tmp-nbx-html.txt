@@ -1,0 +1,81 @@
+<div class="nbx">
+<section class="nbx-sec">
+<div class="nbx-in">
+<p class="nbx-eye">REPORT</p>
+<h2>측정한 뇌파는 10쪽 분석 보고서로 정리됩니다</h2>
+<p class="nbx-sub">뇌파는 서버에서 정밀 분석되어 지표별 그래프와 수치로 정리됩니다. 보고서는 결과 리뷰에서 함께 읽고, 지금 필요한 훈련의 방향을 정합니다.</p>
+<div class="nbx-report">
+<div class="nbx-rsum"><b>뇌기능 정밀 분석 보고서</b>
+<dl><div><dt>10쪽</dt><dd>보고서 분량</dd></div><div><dt>11종</dt><dd>핵심 지표</dd></div><div><dt>1:1</dt><dd>결과 리뷰</dd></div></dl>
+<p>측정한 뇌파를 그래프와 수치로 함께 보여 드리고, 항목마다 뜻을 풀어 설명합니다.</p></div>
+<ol class="nbx-metrics">
+<li><span class="nbx-num">01</span><b>뇌파 그래프</b><span class="nbx-d">측정한 뇌파의 흐름을 시간에 따라 보여 줍니다.</span></li>
+<li><span class="nbx-num">02</span><b>주파수 출현빈도·평균 진폭</b><span class="nbx-d">대역별로 얼마나 자주, 얼마나 세게 나타나는지 봅니다.</span></li>
+<li><span class="nbx-num">03</span><b>알파파 파워 변화</b><span class="nbx-d">이완과 관련된 알파파의 세기 변화를 봅니다.</span></li>
+<li><span class="nbx-num">04</span><b>개안·폐안 뇌파 비교</b><span class="nbx-d">눈을 뜬 상태와 감은 상태의 차이를 비교합니다.</span></li>
+<li><span class="nbx-num">05</span><b>뇌 각성도(세타·SMR)</b><span class="nbx-d">깨어 있는 정도와 안정의 균형을 봅니다.</span></li>
+<li><span class="nbx-num">06</span><b>좌우뇌 균형</b><span class="nbx-d">좌·우 반구의 활동이 고르게 이어지는지 봅니다.</span></li>
+<li><span class="nbx-num">07</span><b>육체적 긴장과 스트레스</b><span class="nbx-d">몸에 남아 있는 긴장의 정도를 봅니다.</span></li>
+<li><span class="nbx-num">08</span><b>정신적 산만과 스트레스</b><span class="nbx-d">생각이 흩어지는 정도를 봅니다.</span></li>
+<li><span class="nbx-num">09</span><b>행동 성향(알파·베타)</b><span class="nbx-d">움직이고 부딪히는 쪽으로 기우는 성향을 봅니다.</span></li>
+<li><span class="nbx-num">10</span><b>정서 성향(좌·우 알파)</b><span class="nbx-d">기분이 어느 쪽으로 기우는지 봅니다.</span></li>
+<li><span class="nbx-num">11</span><b>자기 피드백 능력</b><span class="nbx-d">스스로 상태를 조절하는 힘을 봅니다.</span></li>
+</ol>
+</div>
+<p class="nbx-note">지표 구성과 보고서 분량은 프로그램 버전에 따라 달라질 수 있습니다.</p>
+</div></section>
+
+<section class="nbx-sec nbx-gray">
+<div class="nbx-in">
+<p class="nbx-eye">PROGRAM</p>
+<h2>검사부터 훈련까지, 한 화면에서 이어집니다</h2>
+<p class="nbx-sub">뉴로브레인 프로그램은 검사(BFM·BWM·SFA)와 훈련, 사전설정, 원격 소통을 한 화면에 담았습니다. 검사 결과가 그대로 훈련 설정으로 이어집니다.</p>
+<div class="nbx-map">
+<figure><img src="https://aibts24-ai.github.io/powernap/assets/2026-11/shop-neurobrain-diagram.jpg" alt="뉴로브레인 프로그램 주요 기능 구성도 — BFM·BWM·SFA 검사, SMR 훈련, 자동 실행, 사전설정, 원격 소통" width="1448" height="1086"><figcaption>뉴로브레인 프로그램 주요 기능 구성도</figcaption></figure>
+<ul class="nbx-mapside">
+<li><b>BFM</b><span>뇌파 정밀검사 — 6개 주파수 대역을 종합 분석해 11개 지표 보고서로 정리합니다.</span></li>
+<li><b>BPS</b><span>간소화 보고서 — 2쪽 분량의 종합·성향 보고서를 제공합니다.</span></li>
+<li><b>BWM</b><span>실시간 모니터링 — 훈련 중인 뇌파를 화면에서 바로 확인합니다.</span></li>
+<li><b>SFA</b><span>피드백 최적화 검사 — 스트레스 지수와 뇌기능 균형 상태를 분석합니다.</span></li>
+<li><b>SMR</b><span>집중·안정 훈련 — 집중력, 안정감, 정서 조절을 훈련합니다.</span></li>
+<li><b>AUTO</b><span>자동 실행 — 클릭 한 번으로 검사부터 훈련까지 진행하고 데이터를 저장합니다.</span></li>
+<li><b>PRE-SET</b><span>사전설정 — 검사 결과에 따라 사용자에게 맞는 훈련을 미리 설정합니다.</span></li>
+<li><b>REMOTE</b><span>원격 소통 — 화면을 공유하며 1:1로 지원합니다.</span></li>
+</ul>
+</div>
+</div></section>
+
+<section class="nbx-sec">
+<div class="nbx-in">
+<p class="nbx-eye">TRAINING</p>
+<h2>함께 들어 있는 훈련 프로그램</h2>
+<p class="nbx-sub">뉴로피드백 훈련 게임 10여 종과 뇌 상태를 확인하는 분석 프로그램이 함께 구성되어 있고, 지속적인 업데이트를 지원합니다.</p>
+<div class="nbx-shots">
+<figure><img src="https://aibts24-ai.github.io/powernap/assets/2026-11/nb-training-drive.jpg" alt="뉴로브레인 훈련 화면 — 주행 게임과 뇌파 그래프" width="1036" height="644"><figcaption>훈련 화면 · 주행 게임과 뇌파 그래프</figcaption></figure>
+<figure><img src="https://aibts24-ai.github.io/powernap/assets/2026-11/nb-training-space.jpg" alt="뉴로브레인 훈련 화면 — 우주선 게임" width="555" height="327"><figcaption>훈련 화면 · 우주선 게임</figcaption></figure>
+<figure><img src="https://aibts24-ai.github.io/powernap/assets/2026-11/nb-training-memory.jpg" alt="뉴로브레인 훈련 화면 — 카드 짝 찾기" width="429" height="246"><figcaption>훈련 화면 · 카드 짝 찾기</figcaption></figure>
+</div>
+<ul class="nbx-games">
+<li><b>S Fighter</b><p>집중 상태가 되면 기체가 앞으로 나아갑니다.</p></li>
+<li><b>Nature</b><p>꽃과 풀숲, 나비 풍경을 따라가며 이완합니다.</p></li>
+<li><b>Robot</b><p>집중도에 따라 로봇이 행성을 탐험합니다.</p></li>
+<li><b>Laser Gun</b><p>집중해 레이저를 쏘며 시각·뇌·근육 반응을 함께 훈련합니다.</p></li>
+<li><b>Memory Game</b><p>1초 동안 본 카드의 짝을 기억해 찾습니다.</p></li>
+<li><b>Puzzle Game</b><p>관찰력·사고력·공간지각력을 쓰는 퍼즐입니다.</p></li>
+</ul>
+<div class="nbx-tools"><b>분석 프로그램</b><span>BWM 뇌파 모니터링</span><span>SFA 검사</span><span>D2 시각 주의력</span><span>기억력 검사</span><span>진로 적성 검사</span></div>
+</div></section>
+
+<section class="nbx-sec nbx-any">
+<div class="nbx-in">
+<p class="nbx-eye">ANYWHERE</p>
+<h2>인터넷이 있으면 어디서나</h2>
+<p class="nbx-sub">측정과 분석, 훈련이 하나의 계정으로 이어집니다. 가정에서, 학교에서, 기관에서 같은 방식으로 사용합니다.</p>
+<div class="nbx-3">
+<div><b>클라우드 분석</b><p>측정한 뇌파를 서버로 보내 분석하고, 결과를 어느 기기에서나 확인합니다.</p></div>
+<div><b>원격 1:1 지원</b><p>화면을 공유하며 뇌 전문가와 온라인으로 소통하고, 훈련을 함께 점검합니다.</p></div>
+<div><b>다국어 지원</b><p>한국어·영어·중국어를 지원해 해외 기관에서도 같은 방식으로 사용합니다.</p></div>
+</div>
+<div class="nbx-lang"><span>한국어</span><span>English</span><span>中文</span><span>원격 지원</span><span>지속 업데이트</span></div>
+</div></section>
+</div>
