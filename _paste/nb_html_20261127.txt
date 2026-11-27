@@ -1,0 +1,73 @@
+<div class="nb">
+<section class="nb-hero"><div class="nb-in nb-hero-in">
+<div class="nb-hero-copy">
+<p class="nb-eye">NEURO BRAIN · 뇌기능 검사</p>
+<h1>5분 뇌파 측정으로<br><em>내 뇌의 지금</em>을 확인합니다</h1>
+<p class="nb-lead">뇌파(EEG)를 측정해 두뇌 상태를 수치로 확인하고, 그 결과를 함께 보며 지금 필요한 두뇌훈련의 방향을 정리합니다.</p>
+<ul class="nb-chips"><li>5분 뇌파 측정</li><li>뇌파 5종 분석</li><li>1:1 결과 리뷰</li></ul>
+<div class="nb-acts"><a class="nb-btn" href="http://pf.kakao.com/_xfUKxbn/chat" target="_blank" rel="noopener">검사 상담 신청</a><a class="nb-btn nb-line" href="tel:0220880632">02-2088-0632</a></div>
+</div>
+<div class="nb-hero-img"><img src="https://aibts24-ai.github.io/powernap/assets/2026-11/shop-neurobrain-12727.jpg" alt="뉴로브레인 — 뇌 신경망을 활성시키는 첨단 뇌훈련기술, 박스와 무선 뇌파 밴드" width="1448" height="1086"></div>
+</div></section>
+
+<section class="nb-sec nb-pc"><div class="nb-in">
+<p class="nb-eye">PROCESS</p>
+<h2>뇌기능 검사는 이렇게 진행됩니다</h2>
+<p class="nb-sub">측정부터 결과 리뷰까지, 한 자리에서 이어집니다.</p>
+<div class="nb-two">
+<div class="nb-steps">
+<div class="nb-step"><span class="nb-no">01</span><div><h3>뇌파 측정</h3><p>무선 뇌파 밴드를 착용하고 <b>5분간</b> 뇌파를 측정합니다. 측정값은 실시간으로 프로그램에 전송됩니다.</p></div></div>
+<div class="nb-step"><span class="nb-no">02</span><div><h3>뇌기능 분석</h3><p>델타·세타·알파·베타·감마 <b>5종 뇌파</b>의 균형과 각성·이완 상태를 분석해 두뇌 상태를 수치로 확인합니다.</p></div></div>
+<div class="nb-step"><span class="nb-no">03</span><div><h3>1:1 결과 리뷰</h3><p>측정 결과를 함께 보며 지금의 뇌 상태와 생활 습관, 필요한 두뇌훈련 방향을 1:1로 정리해 드립니다.</p></div></div>
+</div>
+<figure class="nb-fig"><img src="https://aibts24-ai.github.io/powernap/assets/2026-11/counsel-nb-12126.jpg" alt="뉴로브레인 뇌기능 검사 3단계 — 검사·분석, 뇌파측정, 맞춤훈련" width="1024" height="1536"><figcaption>뇌기능 검사 3단계 안내</figcaption></figure>
+</div>
+</div></section>
+
+<section class="nb-sec nb-gray"><div class="nb-in">
+<p class="nb-eye">SYSTEM</p>
+<h2>뉴로브레인 시스템 &amp; 정밀 뇌파(EEG) 검사</h2>
+<p class="nb-sub">생체신호 측정용 고성능 칩을 내장한 무선 뇌파 밴드와 전용 분석 프로그램으로 측정합니다.</p>
+<div class="nb-two nb-two-rev">
+<figure class="nb-fig nb-fig-wide"><img src="https://aibts24-ai.github.io/powernap/assets/2026-11/company-neurobrain-12197.jpg" alt="뉴로브레인 시스템 — 무선 뇌파 밴드와 측정 박스" width="1448" height="1086"></figure>
+<ul class="nb-grid4">
+<li><h3>정밀 EEG 측정</h3><p>무선 센서로 뇌파를 측정해 실시간으로 확인합니다.</p></li>
+<li><h3>3D 두뇌 분석</h3><p>측정된 뇌파를 3D 그래프로 시각화해 한눈에 봅니다.</p></li>
+<li><h3>개인별 훈련 설정</h3><p>뇌파 데이터를 기준으로 훈련 프로그램을 미리 설정합니다.</p></li>
+<li><h3>회차별 변화 기록</h3><p>훈련을 이어가며 달라지는 뇌파를 기록으로 남깁니다.</p></li>
+</ul>
+</div>
+<div class="nb-waves"><b>뇌파 5종으로 보는 두뇌 상태</b><ul><li><span>델타</span>깊은 이완·수면</li><li><span>세타</span>이완·집중의 사이</li><li><span>알파</span>편안한 각성</li><li><span>베타</span>활동·집중</li><li><span>감마</span>고차 인지 처리</li></ul></div>
+</div></section>
+
+<section class="nb-sec"><div class="nb-in">
+<p class="nb-eye">CLINICAL BASIS</p>
+<h2>폴 스윙글 박사 · 임상에 기반한 뉴로피드백</h2>
+<div class="nb-two">
+<div class="nb-bio">
+<p class="nb-para">캐나다의 심리학자이자 뉴로피드백·바이오피드백 전문가인 <b>폴 스윙글 박사(Dr. Paul G. Swingle, Ph.D.)</b>의 임상 경험과 저서를 기반으로 프로그램을 구성했습니다.</p>
+<ul class="nb-list">
+<li>오타와대학교(University of Ottawa) 교수 역임</li>
+<li>캐나다 심리협회(CPA) 펠로우</li>
+<li>저서 『Adding Neurotherapy to Your Practice』(Springer, 2015)</li>
+</ul>
+<div class="nb-case"><b>ADHD 뉴로피드백 사례</b><p>ADHD 아동의 뇌파에서 특정 주파수의 비중이 높다는 점에 주목해, 영화를 보여주다 그 주파수가 커지면 화면을 잠시 멈추는 방식으로 피드백을 주었습니다. 아이들은 스스로 뇌파를 조절해 영화를 이어 보는 방법을 익혔고, 일상에서도 주의력이 달라지는 모습을 보였습니다.</p></div>
+</div>
+<div class="nb-figcol">
+<figure class="nb-fig"><img src="https://aibts24-ai.github.io/powernap/assets/2026-11/shop-neurobrain-swingle-12233.jpg" alt="폴 스윙글 박사 — 뉴로피드백·바이오피드백 전문가" width="1568" height="1003"></figure>
+<figure class="nb-fig"><img src="https://aibts24-ai.github.io/powernap/assets/2026-11/shop-neurobrain-swingle-adhd-12280.jpg" alt="ADHD 뉴로피드백 임상 사례 — 폴 스윙글 박사" width="1672" height="941"></figure>
+</div>
+</div>
+</div></section>
+
+<section class="nb-sec nb-gray"><div class="nb-in">
+<p class="nb-eye">AFTER THE TEST</p>
+<h2>검사 후, 이렇게 이어집니다</h2>
+<div class="nb-3col">
+<div class="nb-card"><span class="nb-no">01</span><h3>결과 리뷰 상담</h3><p>측정 결과를 함께 확인하고 생활 속 습관과 컨디션을 정리합니다.</p></div>
+<div class="nb-card"><span class="nb-no">02</span><h3>맞춤 두뇌훈련</h3><p>뇌파 데이터를 기준으로 개인별 뉴로피드백 훈련을 진행합니다.</p></div>
+<div class="nb-card"><span class="nb-no">03</span><h3>정기 재측정</h3><p>훈련 후 다시 측정해 달라진 뇌파를 수치로 확인합니다.</p></div>
+</div>
+<div class="nb-cta"><b>뇌기능 검사 · 체험 상담 신청</b><p>서초 파워냅 뇌건강센터에서 5분 뇌파 측정과 1:1 결과 리뷰를 함께 받아보세요.</p><div class="nb-acts nb-acts-c"><a class="nb-btn" href="http://pf.kakao.com/_xfUKxbn/chat" target="_blank" rel="noopener">카카오채널 1:1 상담</a><a class="nb-btn nb-gold" href="https://forms.gle/E94sRd4z5Ac8VgGV9" target="_blank" rel="noopener">체험 신청서 작성</a><a class="nb-btn nb-line" href="tel:0220880632">02-2088-0632</a></div></div>
+</div></section>
+</div>
