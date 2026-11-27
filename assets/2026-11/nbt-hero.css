@@ -1,0 +1,17 @@
+/* /pages/neurobraintest 히어로 보정 — 2026-11-27
+   대표님 지시: 뉴로브레인 장비(히어로 이미지 13076)를 페이지 맨 위에 먼저 보이게,
+   이미지에 담긴 제목·본문과 겹치지 않도록 상단 텍스트는 화면에서 숨기고(스크린리더용으로 유지),
+   그 아래에 뇌파 칩과 상담 버튼만 정돈해 배치. */
+.nb-hero{padding:34px 0 30px!important}
+.nb-hero-in{display:flex!important;flex-direction:column!important;align-items:center!important;gap:26px!important}
+.nb-hero-img{order:-1!important;flex:0 0 auto!important;width:100%!important}
+.nb-hero-copy{flex:0 0 auto!important;width:100%!important;display:flex!important;flex-direction:column!important;align-items:center!important;text-align:center!important}
+.nb-hero .nb-eye,.nb-hero .nb-lead{display:none!important}
+.nb-hero h1{position:absolute!important;width:1px!important;height:1px!important;margin:-1px!important;padding:0!important;overflow:hidden!important;clip:rect(0 0 0 0)!important;white-space:nowrap!important;border:0!important}
+.nb-chips{justify-content:center!important;margin-bottom:20px!important}
+.nb-acts{justify-content:center!important}
+@media(max-width:900px){
+.nb-hero{padding:12px 0 22px!important}
+.nb-hero .nb-in{padding:0 12px!important}
+.nb-hero-in{gap:18px!important}
+}
