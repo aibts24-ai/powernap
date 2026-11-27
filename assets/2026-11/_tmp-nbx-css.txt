@@ -2,6 +2,7 @@
 .nbx *{box-sizing:border-box}
 .nbx-in{max-width:1180px;margin:0 auto;padding:0 28px}
 .nbx-sec{padding:64px 0}
+.nbx-sec:first-child{padding-top:32px}
 .nbx-gray{background:#F7FAFE}
 .nbx-any{background:linear-gradient(160deg,#F6FAFF 0%,#EEF5FC 100%);border-top:1px solid #E3ECF7}
 .nbx-eye{margin:0 0 12px;font-size:12px;font-weight:800;letter-spacing:.22em;color:#B08A3E}
@@ -50,6 +51,7 @@
 @media(max-width:900px){
 .nbx-in{padding:0 20px}
 .nbx-sec{padding:44px 0}
+.nbx-sec:first-child{padding-top:22px}
 .nbx-sec h2{font-size:21px}
 .nbx-sub{margin-bottom:24px;font-size:14px}
 .nbx-report{flex-direction:column;gap:18px}
