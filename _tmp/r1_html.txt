@@ -1,0 +1,52 @@
+<div class="w">
+<section class="hero">
+<div class="i">
+<img class="bn" src="https://aibts24-ai.github.io/powernap/assets/2026-11/company-institute-banner-12963.jpg" alt="AI뇌인지융합연구 · (주)에이아이브레인솔루션 기업부설연구소" width="1672" height="941">
+<p class="cap">세상의 변화 속에서, 우리는 ‘뇌의 행복’을 연구합니다.</p>
+</div>
+</section>
+<section class="s">
+<div class="i">
+<p class="eb">01 ABOUT THE INSTITUTE</p>
+<h2>AI 뇌인지융합연구원</h2>
+<div class="g2">
+<div>
+<p class="pt">AI 뇌인지융합연구원은 <b>(주)에이아이브레인솔루션의 기업부설연구소</b>입니다. 뇌파(EEG) 측정과 인공지능 분석을 결합해 뇌 기능과 수면·인지·정서의 변화를 연구합니다.</p>
+<p class="pt">뇌는 쓰는 방식에 따라 달라집니다. 연구원은 뇌파를 정밀하게 측정해 지금의 뇌 상태를 데이터로 확인하고, 그 데이터를 바탕으로 개인에게 맞는 두뇌훈련 프로토콜을 설계합니다. 뉴로피드백으로 실시간 훈련하고, 훈련 전후의 변화를 다시 측정해 기록합니다.</p>
+<p class="pt">연구의 결과는 제품과 프로그램으로 이어집니다. 뉴로브레인(뇌파 측정·뉴로피드백), 파워냅(수면·명상 두뇌훈련), 파워스터디·파워헬스가 연구원의 측정·분석 체계 위에서 운영됩니다.</p>
+</div>
+<div>
+<ul class="chk">
+<li>뇌파 기반 뇌기능 측정·분석</li>
+<li>뉴로피드백 두뇌훈련 프로토콜 설계</li>
+<li>수면·명상 기반 뇌 회복 연구</li>
+<li>설명가능 AI(XAI) 기반 분석 근거 제시</li>
+<li>기능성 소재·제품 연구와 제품화</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="s alt">
+<div class="i">
+<p class="eb">02 DIRECTOR</p>
+<h2>연구소장</h2>
+<div class="dir">
+<div><img src="https://aibts24-ai.github.io/powernap/assets/2026-11/kim-kiyong-powernap.jpg" alt="김기용 · 서울초이스병원 원장, (주)에이아이브레인솔루션 기업부설연구소 연구소장" width="793" height="1984"></div>
+<div>
+<p class="nm">김기용</p>
+<p class="po">서울초이스병원 원장 (現)</p>
+<p class="og">(주)에이아이브레인솔루션 기업부설연구소 연구소장</p>
+<ul>
+<li>· 연세대학교 의과대학 졸업</li>
+<li>· 아주대학교 신경외과 교수</li>
+<li>· 의학박사 (M.D., Ph.D.)</li>
+<li>· 미국 클리블랜드 클리닉 연수</li>
+<li>· 성베드로병원 · 안세병원 척추센터 근무</li>
+<li>· 태성병원 · 사랑병원 병원장 역임</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+</div>

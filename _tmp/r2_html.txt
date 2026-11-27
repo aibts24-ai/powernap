@@ -1,0 +1,64 @@
+<div class="w">
+<section class="s">
+<div class="i">
+<p class="eb">03 RESEARCH FIELDS</p>
+<h2>연구 분야</h2>
+<p class="ld">측정에서 훈련, 그리고 제품까지 — 연구원은 뇌파 데이터를 중심으로 네 갈래의 연구를 이어 갑니다.</p>
+<ul class="cd">
+<li><p class="no">FIELD 01</p><h3>뇌파(EEG) 측정·분석</h3><p>뇌파를 주파수 대역별로 분석해 각성도와 이완도, 좌우뇌 균형, 집중·이완의 흐름을 수치로 확인합니다.</p></li>
+<li><p class="no">FIELD 02</p><h3>AI · 설명가능 AI(XAI)</h3><p>분석 결과를 근거와 함께 제시해, 누구나 이해할 수 있는 데이터로 만듭니다.</p></li>
+<li><p class="no">FIELD 03</p><h3>뉴로피드백 두뇌훈련</h3><p>자신의 뇌파를 실시간으로 보며 필요한 상태로 조절하는 훈련을 개인별로 설계합니다.</p></li>
+<li><p class="no">FIELD 04</p><h3>수면·명상·기능성 소재</h3><p>30분 수면·명상 프로토콜과 컬러테라피 기능성 소재 등 일상에서 쓰는 뇌 건강 기술을 연구합니다.</p></li>
+</ul>
+</div>
+</section>
+<section class="s alt">
+<div class="i">
+<p class="eb">04 PUBLICATIONS &amp; PATENTS</p>
+<h2>학술 논문 · 특허</h2>
+<div class="grp">
+<p class="tt"><span>논문 2건</span> 학술지 게재 · 박사학위 논문</p>
+<ul class="li2">
+<li>《뇌기능의 향상과 수면안정에 대한 뉴로피드백의 과학적 연구》<em>KSU대학교 심리상담학 박사학위 논문 · 2025.08</em></li>
+<li>《전기화학 체외 탄소 나노튜브 문신 센싱을 이용한 통증 진단 분석》<em>한국전기화학회지 제1저자 논문 · Vol. 28, No. 4 · 2025.10</em></li>
+</ul>
+</div>
+<div class="grp">
+<p class="tt"><span>특허 출원 3건</span> 뇌파 · AI 융합 기술</p>
+<ul class="li2">
+<li>인공지능 기반 뇌파 인지·정서 상태 융합 분석을 이용한 치매·불면증 예측 시스템</li>
+<li>설명가능 AI(XAI)를 이용한 뇌파 기반 신경인지 위험도 분석 방법 및 시스템</li>
+<li>컬러테라피 패턴과 에너지 방출 접착층을 포함하는 기능성 스티커 및 그 제조방법</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="s">
+<div class="i">
+<p class="eb">05 RESEARCH RECORD</p>
+<h2>연구 기록과 제품 인증</h2>
+<ul class="tl">
+<li><b>2025.08</b><p>KSU대학교 심리상담학 박사학위 논문 「뇌기능의 향상과 수면안정에 대한 뉴로피드백의 과학적 연구」</p></li>
+<li><b>2025.10</b><p>한국전기화학회지 제1저자 논문 「전기화학 체외 탄소 나노튜브 문신 센싱을 이용한 통증 진단 분석」 게재 (Vol. 28, No. 4)</p></li>
+<li><b>2026</b><p>뇌파·AI 융합 분석과 기능성 소재 기술 특허 3건 출원</p></li>
+</ul>
+<ul class="kc">
+<li><b>파워냅 KC 적합등록</b>R-R-K1A-SM-K-002 · 수면+명상 두뇌훈련기</li>
+<li><b>뉴로브레인 KC 적합등록</b>R-R-K1A-NB0001 · 뇌파 측정·뉴로피드백 시스템</li>
+</ul>
+</div>
+</section>
+<section class="s alt">
+<div class="i">
+<div class="cta">
+<div>
+<p class="eb">CONTACT</p>
+<h2>연구 협력 · 기관 도입 문의</h2>
+<p>산학협력, 공동 연구, 기관·기업 도입 상담을 환영합니다. 뇌파 측정과 두뇌훈련 프로그램에 대한 자료를 보내 드립니다.</p>
+<div class="bt"><a class="b1" href="tel:0220880632">02-2088-0632 전화 상담</a><a class="b2" href="https://pf.kakao.com/_xfUKxbn" target="_blank" rel="noopener">카카오톡 채널 문의</a></div>
+</div>
+<div class="nm"><strong>(주)에이아이브레인솔루션</strong><strong>AI 뇌인지융합연구원</strong><span>서울 서초구 바우뫼로7길 8 (우면종합상가) 702호<br>aibrainkorea@gmail.com</span></div>
+</div>
+</div>
+</section>
+</div>
