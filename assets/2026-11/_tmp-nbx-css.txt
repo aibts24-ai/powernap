@@ -32,7 +32,7 @@
 .nbx-mapside span{display:block;font-size:12.5px;line-height:1.6;color:#4C5E75}
 .nbx-shots{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:0 0 26px}
 .nbx-shots figure{margin:0}
-.nbx-shots img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;object-position:center;border-radius:10px;border:1px solid #E3ECF7;background:#0E2340}
+.nbx-shots img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:center;border-radius:10px;border:1px solid #E3ECF7;background:#0E2340}
 .nbx-shots figcaption{margin-top:8px;font-size:12px;color:#7A8899;text-align:center}
 .nbx-games{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:0;padding:0;list-style:none}
 .nbx-games li{padding:18px;border-radius:12px;background:#fff;border:1px solid #DCE8F7}
