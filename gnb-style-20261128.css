@@ -1,0 +1,145 @@
+/* powernap.kr GNB & Brand Header Style (2026-11-29) */
+#GnbMenu, #GnbMenu a, #GnbMenu button {
+  font-family: 'Pretendard', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+#GnbMenu > li > a::after {
+  display: block;
+  font-weight: 500;
+  color: #667085;
+  letter-spacing: 0.03em;
+  line-height: 1.15;
+}
+#GnbMenu > li:nth-child(1) > a::after { content: "ABOUT COMPANY"; }
+#GnbMenu > li:nth-child(2) > a::after { content: "POWER NAP"; }
+#GnbMenu > li:nth-child(3) > a::after { content: "POWER NAP BRAIN HEALTH CENTER"; }
+#GnbMenu > li:nth-child(4) > a::after { content: "NEUROFEEDBACK EDUCATION"; }
+#GnbMenu > li:nth-child(5) > a::after { content: "BRAIN SCIENCE RESEARCH"; }
+#GnbMenu > li:nth-child(6) > a::after { content: "BRAIN SCIENCE MAGAZINE"; }
+#GnbMenu > li:nth-child(7) > a::after { content: "BUSINESS PARTNERSHIP"; }
+#GnbMenu > li:nth-child(8) > a::after { content: "CUSTOMER SERVICE"; }
+#GnbMenu > li:nth-child(9) > a::after { content: "SHOPPING MALL"; color: #B8964C !important; }
+
+@media (min-width: 1025px) {
+  #GnbMenu {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-wrap: nowrap !important;
+    gap: 0 !important;
+  }
+  #GnbMenu > li {
+    display: flex !important;
+    align-items: center !important;
+    position: relative !important;
+    float: none !important;
+  }
+  #GnbMenu > li + li::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 22px;
+    background: #E5E8EE;
+    flex-shrink: 0;
+  }
+  #GnbMenu > li:last-child::before {
+    display: none !important;
+  }
+  #GnbMenu > li > a {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 10px 8px !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    color: #071432 !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    letter-spacing: -0.02em !important;
+    line-height: 1.2 !important;
+  }
+  #GnbMenu > li > a:hover {
+    color: #B8964C !important;
+  }
+  #GnbMenu > li > a::after {
+    font-size: 7.5px;
+    margin-top: 3px;
+    white-space: nowrap;
+  }
+  #GnbMenu > li:nth-child(3) > a::after {
+    content: "BRAIN HEALTH CENTER";
+  }
+  #GnbMenu > li:last-child {
+    margin-left: 8px !important;
+  }
+  #GnbMenu > li:last-child > a {
+    background: #071432 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #071432 !important;
+    border-radius: 6px !important;
+    padding: 7px 12px !important;
+  }
+  #GnbMenu > li:last-child > a:hover {
+    background: #FFFFFF !important;
+    color: #071432 !important;
+  }
+  #GnbMenu .navi_depth2_wrap {
+    background: #FFFFFF !important;
+    border: 1px solid #E5E8EE !important;
+    border-top: 2px solid #071432 !important;
+    box-shadow: 0 8px 24px rgba(7, 20, 50, 0.08) !important;
+  }
+  #GnbMenu .navi_depth2 a, #GnbMenu .navi_depth3 a {
+    color: #071432 !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+  }
+  #GnbMenu .navi_depth2 a:hover, #GnbMenu .navi_depth3 a:hover {
+    color: #B8964C !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  #GnbMenu > li {
+    border-bottom: 1px solid #E5E8EE !important;
+  }
+  #GnbMenu > li > a {
+    display: block !important;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    color: #071432 !important;
+    padding: 13px 6px !important;
+    line-height: 1.25 !important;
+  }
+  #GnbMenu > li > a::after {
+    font-size: 9.5px;
+    margin-top: 2px;
+  }
+  #GnbMenu .navi_depth2_wrap {
+    background: #F8F6F0 !important;
+  }
+  #GnbMenu .btn_depth2_view::before,
+  #GnbMenu .btn_depth3_view::before {
+    content: "+";
+    font-size: 18px;
+    font-weight: 400;
+    color: #071432;
+  }
+  #GnbMenu li.on > div > .btn_depth2_view::before,
+  #GnbMenu li.active > div > .btn_depth2_view::before,
+  #GnbMenu .btn_depth2_view.on::before,
+  #GnbMenu .btn_depth3_view.on::before {
+    content: "−";
+  }
+  #GnbMenu > li:last-child {
+    border-bottom: none !important;
+    margin-top: 12px !important;
+  }
+  #GnbMenu > li:last-child > a {
+    background: #071432 !important;
+    color: #FFFFFF !important;
+    text-align: center !important;
+    border-radius: 8px !important;
+    padding: 12px !important;
+  }
+}
