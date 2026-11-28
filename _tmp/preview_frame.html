@@ -1,0 +1,26 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>preview frame</title>
+<style>html,body{margin:0;padding:0;background:#fff}iframe{border:0;display:block}</style>
+</head><body>
+<div id="wrap"></div>
+<script>
+var p = new URLSearchParams(location.search);
+var w = parseInt(p.get('w') || '1440', 10);
+var h = parseInt(p.get('h') || '900', 10);
+var off = parseInt(p.get('off') || '0', 10);
+var src = p.get('src') || 'https://powernap.kr/pages/company';
+var wrap = document.getElementById('wrap');
+wrap.style.width = w + 'px';
+wrap.style.height = h + 'px';
+wrap.style.overflow = 'hidden';
+wrap.style.position = 'relative';
+var f = document.createElement('iframe');
+f.src = src;
+f.style.width = w + 'px';
+f.style.height = '9000px';
+f.style.position = 'absolute';
+f.style.top = (-off) + 'px';
+f.style.left = '0';
+wrap.appendChild(f);
+</script>
+</body></html>
