@@ -1,7 +1,6 @@
 /* powernap.kr GNB & Brand Header Style v2 (2026-11-29) */
 #skinHeaderSection #gnbUtilArea #GnbMenu,
-#skinHeaderSection #gnbUtilArea #GnbMenu a,
-#skinHeaderSection #gnbUtilArea #GnbMenu button {
+#skinHeaderSection #gnbUtilArea #GnbMenu a {
   font-family: 'Pretendard', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif !important;
 }
 #skinHeaderSection #gnbUtilArea #GnbMenu > li > a::after {
@@ -123,37 +122,21 @@
   #skinHeaderSection #gnbUtilArea #GnbMenu .navi_depth2_wrap {
     background: #F8F6F0 !important;
   }
-  #skinHeaderSection #gnbUtilArea #GnbMenu .btn_depth2_view,
-  #skinHeaderSection #gnbUtilArea #GnbMenu .btn_depth3_view {
-    font-family: 'Pretendard', sans-serif !important;
-    font-style: normal !important;
-  }
-  #skinHeaderSection #gnbUtilArea #GnbMenu .btn_depth2_view::before,
-  #skinHeaderSection #gnbUtilArea #GnbMenu .btn_depth3_view::before {
-    content: "+" !important;
-    font-family: 'Pretendard', sans-serif !important;
-    font-style: normal !important;
-    font-size: 18px !important;
-    font-weight: 400 !important;
-    color: #071432 !important;
-    line-height: 1 !important;
-  }
-  #skinHeaderSection #gnbUtilArea #GnbMenu li.on > div > .btn_depth2_view::before,
-  #skinHeaderSection #gnbUtilArea #GnbMenu li.active > div > .btn_depth2_view::before,
-  #skinHeaderSection #gnbUtilArea #GnbMenu .btn_depth2_view.on::before,
-  #skinHeaderSection #gnbUtilArea #GnbMenu .btn_depth3_view.on::before,
-  #skinHeaderSection #gnbUtilArea #GnbMenu li.on > div > .btn_depth3_view::before {
-    content: "−" !important;
-  }
   #skinHeaderSection #gnbUtilArea #GnbMenu > li:last-child {
     border-bottom: none !important;
-    margin-top: 12px !important;
+    margin-top: 14px !important;
+    padding: 0 6px !important;
   }
   #skinHeaderSection #gnbUtilArea #GnbMenu > li:last-child > a {
     background: #071432 !important;
     color: #FFFFFF !important;
     text-align: center !important;
     border-radius: 8px !important;
-    padding: 12px !important;
+    padding: 12px 16px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  #skinHeaderSection #gnbUtilArea #GnbMenu > li:last-child .btn_depth2_view {
+    display: none !important;
   }
 }
