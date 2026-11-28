@@ -1,0 +1,150 @@
+/* powernap.kr GNB & Brand Header Style v2 (2026-11-29) */
+#skinHeaderSection #gnbUtilArea #GnbMenu,
+#skinHeaderSection #gnbUtilArea #GnbMenu a,
+#skinHeaderSection #gnbUtilArea #GnbMenu button {
+  font-family: 'Pretendard', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+#skinHeaderSection #gnbUtilArea #GnbMenu > li > a::after {
+  display: block !important;
+  font-weight: 500 !important;
+  color: #667085 !important;
+  letter-spacing: 0.02em !important;
+  line-height: 1.15 !important;
+}
+#skinHeaderSection #gnbUtilArea #GnbMenu > li:nth-child(1) > a::after { content: "ABOUT COMPANY"; }
+#skinHeaderSection #gnbUtilArea #GnbMenu > li:nth-child(2) > a::after { content: "POWER NAP"; }
+#skinHeaderSection #gnbUtilArea #GnbMenu > li:nth-child(3) > a::after { content: "POWER NAP BRAIN HEALTH CENTER"; }
+#skinHeaderSection #gnbUtilArea #GnbMenu > li:nth-child(4) > a::after { content: "NEUROFEEDBACK EDUCATION"; }
+#skinHeaderSection #gnbUtilArea #GnbMenu > li:nth-child(5) > a::after { content: "BRAIN SCIENCE RESEARCH"; }
+#skinHeaderSection #gnbUtilArea #GnbMenu > li:nth-child(6) > a::after { content: "BRAIN SCIENCE MAGAZINE"; }
+#skinHeaderSection #gnbUtilArea #GnbMenu > li:nth-child(7) > a::after { content: "BUSINESS PARTNERSHIP"; }
+#skinHeaderSection #gnbUtilArea #GnbMenu > li:nth-child(8) > a::after { content: "CUSTOMER SERVICE"; }
+#skinHeaderSection #gnbUtilArea #GnbMenu > li:nth-child(9) > a::after { content: "SHOPPING MALL"; color: #B8964C !important; }
+
+@media (min-width: 1025px) {
+  #skinHeaderSection #gnbUtilArea #GnbMenu {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    flex-wrap: nowrap !important;
+    gap: 0 !important;
+  }
+  #skinHeaderSection #gnbUtilArea #GnbMenu > li {
+    display: flex !important;
+    align-items: center !important;
+    position: relative !important;
+    float: none !important;
+    width: auto !important;
+  }
+  #skinHeaderSection #gnbUtilArea #GnbMenu > li + li::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 22px;
+    background: #E5E8EE;
+    flex-shrink: 0;
+  }
+  #skinHeaderSection #gnbUtilArea #GnbMenu > li:last-child::before {
+    display: none !important;
+  }
+  #skinHeaderSection #gnbUtilArea #GnbMenu > li > a {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 8px 7px !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    color: #071432 !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    letter-spacing: -0.02em !important;
+    line-height: 1.2 !important;
+  }
+  #skinHeaderSection #gnbUtilArea #GnbMenu > li > a:hover {
+    color: #B8964C !important;
+  }
+  #skinHeaderSection #gnbUtilArea #GnbMenu > li > a::after {
+    font-size: 7.5px !important;
+    margin-top: 3px !important;
+    white-space: nowrap !important;
+  }
+  #skinHeaderSection #gnbUtilArea #GnbMenu > li:nth-child(3) > a::after {
+    content: "BRAIN HEALTH CENTER";
+  }
+  #skinHeaderSection #gnbUtilArea #GnbMenu > li:last-child {
+    margin-left: 8px !important;
+  }
+  #skinHeaderSection #gnbUtilArea #GnbMenu > li:last-child > a {
+    background: #071432 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #071432 !important;
+    border-radius: 6px !important;
+    padding: 7px 12px !important;
+  }
+  #skinHeaderSection #gnbUtilArea #GnbMenu > li:last-child > a:hover {
+    background: #FFFFFF !important;
+    color: #071432 !important;
+  }
+  #skinHeaderSection #gnbUtilArea #GnbMenu .navi_depth2_wrap {
+    background: #FFFFFF !important;
+    border: 1px solid #E5E8EE !important;
+    border-top: 2px solid #071432 !important;
+    box-shadow: 0 8px 24px rgba(7, 20, 50, 0.08) !important;
+  }
+  #skinHeaderSection #gnbUtilArea #GnbMenu .navi_depth2 a,
+  #skinHeaderSection #gnbUtilArea #GnbMenu .navi_depth3 a {
+    color: #071432 !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+  }
+  #skinHeaderSection #gnbUtilArea #GnbMenu .navi_depth2 a:hover,
+  #skinHeaderSection #gnbUtilArea #GnbMenu .navi_depth3 a:hover {
+    color: #B8964C !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  #skinHeaderSection #gnbUtilArea #GnbMenu > li {
+    border-bottom: 1px solid #E5E8EE !important;
+  }
+  #skinHeaderSection #gnbUtilArea #GnbMenu > li > a {
+    display: block !important;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    color: #071432 !important;
+    padding: 13px 6px !important;
+    line-height: 1.25 !important;
+  }
+  #skinHeaderSection #gnbUtilArea #GnbMenu > li > a::after {
+    font-size: 9.5px !important;
+    margin-top: 2px !important;
+  }
+  #skinHeaderSection #gnbUtilArea #GnbMenu .navi_depth2_wrap {
+    background: #F8F6F0 !important;
+  }
+  #skinHeaderSection #gnbUtilArea #GnbMenu .btn_depth2_view::before,
+  #skinHeaderSection #gnbUtilArea #GnbMenu .btn_depth3_view::before {
+    content: "+";
+    font-size: 18px;
+    font-weight: 400;
+    color: #071432;
+  }
+  #skinHeaderSection #gnbUtilArea #GnbMenu li.on > div > .btn_depth2_view::before,
+  #skinHeaderSection #gnbUtilArea #GnbMenu li.active > div > .btn_depth2_view::before,
+  #skinHeaderSection #gnbUtilArea #GnbMenu .btn_depth2_view.on::before,
+  #skinHeaderSection #gnbUtilArea #GnbMenu .btn_depth3_view.on::before {
+    content: "−";
+  }
+  #skinHeaderSection #gnbUtilArea #GnbMenu > li:last-child {
+    border-bottom: none !important;
+    margin-top: 12px !important;
+  }
+  #skinHeaderSection #gnbUtilArea #GnbMenu > li:last-child > a {
+    background: #071432 !important;
+    color: #FFFFFF !important;
+    text-align: center !important;
+    border-radius: 8px !important;
+    padding: 12px !important;
+  }
+}
