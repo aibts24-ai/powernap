@@ -123,18 +123,27 @@
   #skinHeaderSection #gnbUtilArea #GnbMenu .navi_depth2_wrap {
     background: #F8F6F0 !important;
   }
+  #skinHeaderSection #gnbUtilArea #GnbMenu .btn_depth2_view,
+  #skinHeaderSection #gnbUtilArea #GnbMenu .btn_depth3_view {
+    font-family: 'Pretendard', sans-serif !important;
+    font-style: normal !important;
+  }
   #skinHeaderSection #gnbUtilArea #GnbMenu .btn_depth2_view::before,
   #skinHeaderSection #gnbUtilArea #GnbMenu .btn_depth3_view::before {
-    content: "+";
-    font-size: 18px;
-    font-weight: 400;
-    color: #071432;
+    content: "+" !important;
+    font-family: 'Pretendard', sans-serif !important;
+    font-style: normal !important;
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    color: #071432 !important;
+    line-height: 1 !important;
   }
   #skinHeaderSection #gnbUtilArea #GnbMenu li.on > div > .btn_depth2_view::before,
   #skinHeaderSection #gnbUtilArea #GnbMenu li.active > div > .btn_depth2_view::before,
   #skinHeaderSection #gnbUtilArea #GnbMenu .btn_depth2_view.on::before,
-  #skinHeaderSection #gnbUtilArea #GnbMenu .btn_depth3_view.on::before {
-    content: "−";
+  #skinHeaderSection #gnbUtilArea #GnbMenu .btn_depth3_view.on::before,
+  #skinHeaderSection #gnbUtilArea #GnbMenu li.on > div > .btn_depth3_view::before {
+    content: "−" !important;
   }
   #skinHeaderSection #gnbUtilArea #GnbMenu > li:last-child {
     border-bottom: none !important;
