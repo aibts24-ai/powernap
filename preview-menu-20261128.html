@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>파워냅 홈페이지 메뉴 및 디자인 개편 시안 | powernap.kr</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+<style>
+  :root {
+    --bg-white: #FFFFFF;
+    --bg-ivory: #F8F6F0;
+    --bg-silver: #EDF3F8;
+    --navy: #071432;
+    --gold: #B8964C;
+    --text-body: #2C3444;
+    --text-sub: #667085;
+    --line: #E5E8EE;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Noto Sans KR', sans-serif;
+    background: #F2F4F7;
+    color: var(--text-body);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* 시안 전환 상단 바 */
+  .preview-toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: var(--navy);
+    color: #fff;
+    padding: 10px 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    border-bottom: 2px solid var(--gold);
+  }
+  .preview-title {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+  .preview-title span { color: var(--gold); margin-right: 6px; }
+  .preview-tabs {
+    display: flex;
+    gap: 6px;
+  }
+  .preview-tab {
+    background: rgba(255,255,255,0.12);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.25);
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .15s;
+  }
+  .preview-tab.active {
+    background: var(--gold);
+    color: var(--navy);
+    border-color: var(--gold);
+  }
+
+  /* 뷰포트 컨테이너 */
+  .stage {
+    padding: 20px 12px 48px;
+    display: flex;
+    justify-content: center;
+  }
+  .view-pc { width: 100%; max-width: 1360px; background: var(--bg-white); border: 1px solid var(--line); border-radius: 10px; overflow: visible; box-shadow: 0 8px 30px rgba(7,20,50,0.06); }
+  .view-mobile { width: 100%; max-width: 393px; background: var(--bg-white); border: 1px solid #D0D5DD; border-radius: 24px; overflow: hidden; box-shadow: 0 12px 36px rgba(7,20,50,0.12); display: none; }
+  body.mode-mobile .view-pc { display: none; }
+  body.mode-mobile .view-mobile { display: block; }
+
+  /* ================= PC HEADER ================= */
+  .pc-header {
+    background: var(--bg-white);
+    border-bottom: 1px solid var(--line);
+    position: relative;
+  }
+  .pc-util {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 8px 24px 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    font-size: 11px;
+    color: var(--text-sub);
+    letter-spacing: 0.04em;
+  }
+  .pc-nav-row {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 10px 24px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .pc-logo img {
+    height: 52px;
+    width: auto;
+    display: block;
+  }
+  .pc-gnb {
+    display: flex;
+    align-items: stretch;
+    list-style: none;
+    flex: 1;
+    justify-content: center;
+  }
+  .pc-gnb > li {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .pc-gnb > li + li::before {
+    content: "";
+    width: 1px;
+    height: 22px;
+    background: var(--line);
+    display: block;
+  }
+  .pc-menu-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 13px;
+    text-decoration: none;
+    color: var(--navy);
+    text-align: center;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-family: inherit;
+    transition: color .15s;
+  }
+  .pc-menu-btn:hover, .pc-gnb > li.open .pc-menu-btn {
+    color: var(--gold);
+  }
+  .pc-menu-ko {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    white-space: nowrap;
+  }
+  .pc-menu-en {
+    font-size: 9px;
+    font-weight: 500;
+    color: var(--text-sub);
+    letter-spacing: 0.04em;
+    margin-top: 2px;
+    white-space: nowrap;
+  }
+  .pc-shop-btn {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    border: 1.5px solid var(--navy);
+    border-radius: 6px;
+    background: var(--navy);
+    color: #FFFFFF;
+    text-decoration: none;
+    flex-shrink: 0;
+    transition: all .15s;
+  }
+  .pc-shop-btn:hover {
+    background: #FFFFFF;
+    color: var(--navy);
+  }
+  .pc-shop-btn .ko { font-size: 13px; font-weight: 700; letter-spacing: -0.02em; }
+  .pc-shop-btn .en { font-size: 8.5px; font-weight: 600; color: var(--gold); letter-spacing: 0.08em; margin-top: 1px; }
+
+  /* PC 드롭다운 */
+  .pc-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 210px;
+    background: var(--bg-white);
+    border: 1px solid var(--line);
+    border-top: 2px solid var(--navy);
+    border-radius: 0 0 8px 8px;
+    padding: 12px 14px;
+    box-shadow: 0 10px 24px rgba(7,20,50,0.08);
+    z-index: 100;
+  }
+  .pc-gnb > li:hover .pc-dropdown,
+  .pc-gnb > li.open .pc-dropdown {
+    display: block;
+  }
+  .pc-dropdown-wide {
+    min-width: 340px;
+    display: none;
+  }
+  .pc-gnb > li:hover .pc-dropdown-wide,
+  .pc-gnb > li.open .pc-dropdown-wide {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .pc-drop-group-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--navy);
+    padding-bottom: 6px;
+    margin-bottom: 6px;
+    border-bottom: 1px solid var(--line);
+  }
+  .pc-drop-list {
+    list-style: none;
+  }
+  .pc-drop-list li + li {
+    border-top: 1px solid #F2F4F7;
+  }
+  .pc-drop-list a {
+    display: block;
+    padding: 7px 4px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-body);
+    text-decoration: none;
+  }
+  .pc-drop-list a:hover {
+    color: var(--gold);
+  }
+
+  /* PC 본문 샘플 (컬러 기준 확인용) */
+  .section-white { background: var(--bg-white); padding: 48px 24px; border-bottom: 1px solid var(--line); }
+  .section-silver { background: var(--bg-silver); padding: 48px 24px; border-bottom: 1px solid var(--line); }
+  .section-ivory { background: var(--bg-ivory); padding: 48px 24px; border-bottom: 1px solid var(--line); }
+  .inner { max-width: 1100px; margin: 0 auto; }
+  .eyebrow { font-size: 11px; font-weight: 700; color: var(--gold); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 8px; }
+  .sec-h2 { font-size: 26px; font-weight: 700; color: var(--navy); letter-spacing: -0.02em; margin-bottom: 10px; }
+  .sec-p { font-size: 15px; color: var(--text-sub); max-width: 680px; }
+  .chip-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+  .chip { background: var(--bg-white); border: 1px solid var(--line); padding: 7px 14px; border-radius: 99px; font-size: 13px; font-weight: 600; color: var(--navy); }
+  .mag-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 22px; }
+  .mag-card { background: var(--bg-white); border: 1px solid var(--line); border-radius: 10px; padding: 20px; }
+  .mag-tag { font-size: 11px; font-weight: 700; color: var(--gold); margin-bottom: 6px; }
+  .mag-title { font-size: 16px; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+  .mag-desc { font-size: 13px; color: var(--text-sub); }
+
+  /* ================= MOBILE VIEW ================= */
+  .mo-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    background: var(--bg-white);
+    border-bottom: 1px solid var(--line);
+  }
+  .mo-logo img { height: 38px; width: auto; display: block; }
+  .mo-actions { display: flex; align-items: center; gap: 10px; }
+  .mo-shop-pill {
+    font-size: 12px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background: var(--navy);
+    padding: 6px 11px;
+    border-radius: 6px;
+    text-decoration: none;
+  }
+  .mo-burger {
+    width: 34px;
+    height: 34px;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: var(--bg-white);
+    color: var(--navy);
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mo-drawer {
+    background: var(--bg-white);
+    padding: 8px 18px 24px;
+  }
+  .mo-cat {
+    border-bottom: 1px solid var(--line);
+  }
+  .mo-cat-head {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 15px 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .mo-cat-titles { display: flex; flex-direction: column; }
+  .mo-cat-ko { font-size: 15px; font-weight: 700; color: var(--navy); letter-spacing: -0.02em; }
+  .mo-cat-en { font-size: 10px; font-weight: 500; color: var(--text-sub); letter-spacing: 0.05em; margin-top: 2px; }
+  .mo-toggle {
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--navy);
+    flex-shrink: 0;
+  }
+  .mo-sub {
+    display: none;
+    background: var(--bg-ivory);
+    border-top: 1px solid var(--line);
+    padding: 6px 12px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+  }
+  .mo-cat.open .mo-sub { display: block; }
+  .mo-sub-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 4px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-body);
+    text-decoration: none;
+    border-bottom: 1px solid #EAE6DC;
+  }
+  .mo-sub-link:last-child { border-bottom: none; }
+  .mo-sub-group {
+    padding: 8px 4px;
+    border-bottom: 1px solid #EAE6DC;
+  }
+  .mo-sub-group:last-child { border-bottom: none; }
+  .mo-sub-group-head {
+    width: 100%;
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--navy);
+    padding: 4px 0;
+    cursor: pointer;
+  }
+  .mo-depth3 {
+    display: none;
+    padding-left: 12px;
+    margin-top: 4px;
+  }
+  .mo-sub-group.open .mo-depth3 { display: block; }
+  .mo-depth3 a {
+    display: block;
+    padding: 6px 0;
+    font-size: 13px;
+    color: var(--text-sub);
+    text-decoration: none;
+  }
+  .mo-shop-block {
+    margin-top: 18px;
+    display: block;
+    text-align: center;
+    background: var(--navy);
+    color: #FFFFFF;
+    padding: 13px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: 1px solid var(--navy);
+  }
+  .mo-shop-block .ko { display: block; font-size: 15px; font-weight: 700; }
+  .mo-shop-block .en { display: block; font-size: 10px; color: var(--gold); letter-spacing: 0.08em; margin-top: 2px; }
+
+  @media (max-width: 960px) {
+    .pc-gnb { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="preview-toolbar">
+  <div class="preview-title"><span>●</span>powernap.kr 메뉴 · 디자인 개편 시안 (미리보기)</div>
+  <div class="preview-tabs">
+    <button class="preview-tab active" onclick="setMode('pc', this)">PC 화면 보기</button>
+    <button class="preview-tab" onclick="setMode('mobile', this)">모바일 화면 보기</button>
+  </div>
+</div>
+
+<div class="stage">
+  <!-- ================= PC 시안 ================= -->
+  <div class="view-pc">
+    <header class="pc-header">
+      <div class="pc-util">
+        <span>LOGIN</span>
+        <span>JOIN</span>
+        <span>MYPAGE</span>
+      </div>
+      <div class="pc-nav-row">
+        <a class="pc-logo" href="#none">
+          <img src="https://powernap.kr/storage/upload_images/POcs8Pj4b7r3PdtjTwmSN12kz4LQYqfTNhlcvlaw.png" alt="에이아이브레인솔루션 파워냅 로고">
+        </a>
+        <ul class="pc-gnb">
+          <li>
+            <button class="pc-menu-btn" type="button">
+              <span class="pc-menu-ko">회사 소개</span>
+              <span class="pc-menu-en">ABOUT COMPANY</span>
+            </button>
+            <div class="pc-dropdown">
+              <ul class="pc-drop-list">
+                <li><a href="#none">회사 소개</a></li>
+                <li><a href="#none">연혁</a></li>
+                <li><a href="#none">오시는 길</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button class="pc-menu-btn" type="button">
+              <span class="pc-menu-ko">파워냅</span>
+              <span class="pc-menu-en">POWER NAP</span>
+            </button>
+            <div class="pc-dropdown pc-dropdown-wide">
+              <div>
+                <div class="pc-drop-group-title">파워냅 소개</div>
+                <ul class="pc-drop-list">
+                  <li><a href="#none">파워냅</a></li>
+                  <li><a href="#none">파워스터디</a></li>
+                  <li><a href="#none">파워헬스</a></li>
+                </ul>
+              </div>
+              <div>
+                <div class="pc-drop-group-title">뉴로피드백 제품 소개</div>
+                <ul class="pc-drop-list">
+                  <li><a href="#none">뉴로브레인</a></li>
+                  <li><a href="#none">BCI 뉴로웨이브</a></li>
+                  <li><a href="#none">감마독서</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <button class="pc-menu-btn" type="button">
+              <span class="pc-menu-ko">파워냅 뇌건강센터</span>
+              <span class="pc-menu-en">POWER NAP BRAIN HEALTH CENTER</span>
+            </button>
+            <div class="pc-dropdown">
+              <ul class="pc-drop-list">
+                <li><a href="#none">뇌기능 측정</a></li>
+                <li><a href="#none">두뇌훈련 프로그램</a></li>
+                <li><a href="#none">1:1 상담</a></li>
+                <li><a href="#none">전국 센터 안내</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button class="pc-menu-btn" type="button">
+              <span class="pc-menu-ko">뉴로피드백 교육</span>
+              <span class="pc-menu-en">NEUROFEEDBACK EDUCATION</span>
+            </button>
+            <div class="pc-dropdown">
+              <ul class="pc-drop-list">
+                <li><a href="#none">뉴로피드백 전문가</a></li>
+                <li><a href="#none">AI 수면상담사</a></li>
+                <li><a href="#none">두뇌훈련 전문가 과정</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button class="pc-menu-btn" type="button">
+              <span class="pc-menu-ko">뇌과학 연구</span>
+              <span class="pc-menu-en">BRAIN SCIENCE RESEARCH</span>
+            </button>
+            <div class="pc-dropdown">
+              <ul class="pc-drop-list">
+                <li><a href="#none">학술논문 및 특허</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a class="pc-menu-btn" href="#none">
+              <span class="pc-menu-ko">뇌과학 전문 매거진</span>
+              <span class="pc-menu-en">BRAIN SCIENCE MAGAZINE</span>
+            </a>
+          </li>
+          <li>
+            <button class="pc-menu-btn" type="button">
+              <span class="pc-menu-ko">창업·사업협력</span>
+              <span class="pc-menu-en">BUSINESS PARTNERSHIP</span>
+            </button>
+            <div class="pc-dropdown">
+              <ul class="pc-drop-list">
+                <li><a href="#none">파워냅 센터 창업 안내</a></li>
+                <li><a href="#none">AI 뇌인지융합 산학협력</a></li>
+                <li><a href="#none">기업복지 프로그램</a></li>
+                <li><a href="#none">사업협력 문의</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button class="pc-menu-btn" type="button">
+              <span class="pc-menu-ko">고객센터</span>
+              <span class="pc-menu-en">CUSTOMER SERVICE</span>
+            </button>
+            <div class="pc-dropdown">
+              <ul class="pc-drop-list">
+                <li><a href="#none">심리상담 신청</a></li>
+                <li><a href="#none">두뇌훈련 신청</a></li>
+                <li><a href="#none">A/S 신청</a></li>
+                <li><a href="#none">자주 묻는 질문</a></li>
+                <li><a href="#none">공지사항</a></li>
+                <li><a href="#none">소식·블로그</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <a class="pc-shop-btn" href="#none">
+          <span class="ko">쇼핑몰</span>
+          <span class="en">SHOPPING MALL</span>
+        </a>
+      </div>
+    </header>
+
+    <section class="section-white">
+      <div class="inner">
+        <div class="eyebrow">WHITE #FFFFFF · 기본 배경</div>
+        <h2 class="sec-h2">상단 메뉴에 마우스를 올리시면 하위 카테고리를 확인하실 수 있습니다</h2>
+        <p class="sec-p">기존 홈페이지 콘텐츠와 이미지는 그대로 유지한 채, 대기업·전문 뇌과학 기술기업 기준으로 메뉴 구조·구분선·여백·컬러를 정돈한 시안입니다.</p>
+        <div class="chip-row">
+          <span class="chip">장식 아이콘 · 번호 삭제</span>
+          <span class="chip">한글 아래 정갈한 영문명</span>
+          <span class="chip">메뉴 간 얇은 구분선</span>
+          <span class="chip">쇼핑몰 버튼 분리 유지</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-silver">
+      <div class="inner">
+        <div class="eyebrow">SILVER BLUE #EDF3F8 · 기술 소개 배경</div>
+        <h2 class="sec-h2">뇌파(EEG) 기반 뉴로피드백 · AI 두뇌훈련 기술</h2>
+        <p class="sec-p">파워냅, 파워스터디, 파워헬스 및 뉴로브레인·BCI 뉴로웨이브·감마독서 등 기술·제품 소개 영역에 실버 블루 배경을 적용합니다.</p>
+      </div>
+    </section>
+
+    <section class="section-ivory">
+      <div class="inner">
+        <div class="eyebrow">CREAM IVORY #F8F6F0 · 보조 배경</div>
+        <h2 class="sec-h2">뇌과학 전문 매거진 (PC 3~4열 · 모바일 2열 책 표지형)</h2>
+        <p class="sec-p">방송·언론·국내외 학술연구·우수미 칼럼 자료를 책 표지형 카드로 구성하고, 클릭 시 상세 자료 및 외부 링크가 새 창으로 열립니다.</p>
+        <div class="mag-grid">
+          <div class="mag-card">
+            <div class="mag-tag">방송 · 언론</div>
+            <div class="mag-title">KBS 생로병사의 비밀 · 조선일보</div>
+            <div class="mag-desc">수면과 뇌 청소, 양궁 뉴로피드백 보도 자료</div>
+          </div>
+          <div class="mag-card">
+            <div class="mag-tag">국내외 학술연구</div>
+            <div class="mag-title">뉴로피드백 학술연구 자료실</div>
+            <div class="mag-desc">수면·집중력·기억력·스포츠·심리정서 6개 분야</div>
+          </div>
+          <div class="mag-card">
+            <div class="mag-tag">우수미 대표 칼럼</div>
+            <div class="mag-title">두뇌훈련 '파워냅' 칼럼 · 모음집</div>
+            <div class="mag-desc">언론 연재 칼럼 10편 및 단행본·전자책 안내</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ================= MOBILE 시안 ================= -->
+  <div class="view-mobile">
+    <div class="mo-header">
+      <a class="mo-logo" href="#none">
+        <img src="https://powernap.kr/storage/upload_images/POcs8Pj4b7r3PdtjTwmSN12kz4LQYqfTNhlcvlaw.png" alt="파워냅 로고">
+      </a>
+      <div class="mo-actions">
+        <a class="mo-shop-pill" href="#none">쇼핑몰</a>
+        <button class="mo-burger" type="button" aria-label="메뉴">☰</button>
+      </div>
+    </div>
+
+    <div class="mo-drawer">
+      <div class="mo-cat open">
+        <button class="mo-cat-head" type="button" onclick="toggleCat(this)">
+          <div class="mo-cat-titles">
+            <span class="mo-cat-ko">회사 소개</span>
+            <span class="mo-cat-en">ABOUT COMPANY</span>
+          </div>
+          <span class="mo-toggle">−</span>
+        </button>
+        <div class="mo-sub">
+          <a class="mo-sub-link" href="#none">회사 소개</a>
+          <a class="mo-sub-link" href="#none">연혁</a>
+          <a class="mo-sub-link" href="#none">오시는 길</a>
+        </div>
+      </div>
+
+      <div class="mo-cat open">
+        <button class="mo-cat-head" type="button" onclick="toggleCat(this)">
+          <div class="mo-cat-titles">
+            <span class="mo-cat-ko">파워냅</span>
+            <span class="mo-cat-en">POWER NAP</span>
+          </div>
+          <span class="mo-toggle">−</span>
+        </button>
+        <div class="mo-sub">
+          <div class="mo-sub-group open">
+            <button class="mo-sub-group-head" type="button" onclick="toggleGroup(this)">
+              <span>파워냅 소개</span>
+              <span class="mo-toggle">−</span>
+            </button>
+            <div class="mo-depth3">
+              <a href="#none">· 파워냅</a>
+              <a href="#none">· 파워스터디</a>
+              <a href="#none">· 파워헬스</a>
+            </div>
+          </div>
+          <div class="mo-sub-group open">
+            <button class="mo-sub-group-head" type="button" onclick="toggleGroup(this)">
+              <span>뉴로피드백 제품 소개</span>
+              <span class="mo-toggle">−</span>
+            </button>
+            <div class="mo-depth3">
+              <a href="#none">· 뉴로브레인</a>
+              <a href="#none">· BCI 뉴로웨이브</a>
+              <a href="#none">· 감마독서</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mo-cat">
+        <button class="mo-cat-head" type="button" onclick="toggleCat(this)">
+          <div class="mo-cat-titles">
+            <span class="mo-cat-ko">파워냅 뇌건강센터</span>
+            <span class="mo-cat-en">POWER NAP BRAIN HEALTH CENTER</span>
+          </div>
+          <span class="mo-toggle">+</span>
+        </button>
+        <div class="mo-sub">
+          <a class="mo-sub-link" href="#none">뇌기능 측정</a>
+          <a class="mo-sub-link" href="#none">두뇌훈련 프로그램</a>
+          <a class="mo-sub-link" href="#none">1:1 상담</a>
+          <a class="mo-sub-link" href="#none">전국 센터 안내</a>
+        </div>
+      </div>
+
+      <div class="mo-cat">
+        <button class="mo-cat-head" type="button" onclick="toggleCat(this)">
+          <div class="mo-cat-titles">
+            <span class="mo-cat-ko">뉴로피드백 교육</span>
+            <span class="mo-cat-en">NEUROFEEDBACK EDUCATION</span>
+          </div>
+          <span class="mo-toggle">+</span>
+        </button>
+        <div class="mo-sub">
+          <a class="mo-sub-link" href="#none">뉴로피드백 전문가</a>
+          <a class="mo-sub-link" href="#none">AI 수면상담사</a>
+          <a class="mo-sub-link" href="#none">두뇌훈련 전문가 과정</a>
+        </div>
+      </div>
+
+      <div class="mo-cat">
+        <button class="mo-cat-head" type="button" onclick="toggleCat(this)">
+          <div class="mo-cat-titles">
+            <span class="mo-cat-ko">뇌과학 연구</span>
+            <span class="mo-cat-en">BRAIN SCIENCE RESEARCH</span>
+          </div>
+          <span class="mo-toggle">+</span>
+        </button>
+        <div class="mo-sub">
+          <a class="mo-sub-link" href="#none">학술논문 및 특허</a>
+        </div>
+      </div>
+
+      <div class="mo-cat">
+        <a class="mo-cat-head" href="#none" style="text-decoration:none;">
+          <div class="mo-cat-titles">
+            <span class="mo-cat-ko">뇌과학 전문 매거진</span>
+            <span class="mo-cat-en">BRAIN SCIENCE MAGAZINE</span>
+          </div>
+          <span class="mo-toggle" style="font-size:15px;color:var(--text-sub);">›</span>
+        </a>
+      </div>
+
+      <div class="mo-cat">
+        <button class="mo-cat-head" type="button" onclick="toggleCat(this)">
+          <div class="mo-cat-titles">
+            <span class="mo-cat-ko">창업·사업협력</span>
+            <span class="mo-cat-en">BUSINESS PARTNERSHIP</span>
+          </div>
+          <span class="mo-toggle">+</span>
+        </button>
+        <div class="mo-sub">
+          <a class="mo-sub-link" href="#none">파워냅 센터 창업 안내</a>
+          <a class="mo-sub-link" href="#none">AI 뇌인지융합 산학협력</a>
+          <a class="mo-sub-link" href="#none">기업복지 프로그램</a>
+          <a class="mo-sub-link" href="#none">사업협력 문의</a>
+        </div>
+      </div>
+
+      <div class="mo-cat">
+        <button class="mo-cat-head" type="button" onclick="toggleCat(this)">
+          <div class="mo-cat-titles">
+            <span class="mo-cat-ko">고객센터</span>
+            <span class="mo-cat-en">CUSTOMER SERVICE</span>
+          </div>
+          <span class="mo-toggle">+</span>
+        </button>
+        <div class="mo-sub">
+          <a class="mo-sub-link" href="#none">심리상담 신청</a>
+          <a class="mo-sub-link" href="#none">두뇌훈련 신청</a>
+          <a class="mo-sub-link" href="#none">A/S 신청</a>
+          <a class="mo-sub-link" href="#none">자주 묻는 질문</a>
+          <a class="mo-sub-link" href="#none">공지사항</a>
+          <a class="mo-sub-link" href="#none">소식·블로그</a>
+        </div>
+      </div>
+
+      <a class="mo-shop-block" href="#none">
+        <span class="ko">쇼핑몰 &nbsp;›</span>
+        <span class="en">SHOPPING MALL</span>
+      </a>
+      <div style="margin-top:14px;padding-left:2px;">
+        <div style="font-size:17px;font-weight:700;color:var(--navy);letter-spacing:-0.01em;">02-2088-0632</div>
+        <div style="font-size:12px;color:var(--text-sub);margin-top:2px;">(주)에이아이브레인솔루션</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function setMode(mode, btn) {
+    document.querySelectorAll('.preview-tab').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    if (mode === 'mobile') {
+      document.body.classList.add('mode-mobile');
+    } else {
+      document.body.classList.remove('mode-mobile');
+    }
+  }
+  function toggleCat(btn) {
+    const cat = btn.closest('.mo-cat');
+    const isOpen = cat.classList.toggle('open');
+    const icon = btn.querySelector('.mo-toggle');
+    if (icon) icon.textContent = isOpen ? '−' : '+';
+  }
+  function toggleGroup(btn) {
+    const grp = btn.closest('.mo-sub-group');
+    const isOpen = grp.classList.toggle('open');
+    const icon = btn.querySelector('.mo-toggle');
+    if (icon) icon.textContent = isOpen ? '−' : '+';
+  }
+  // 모바일 기기에서 열면 자동으로 모바일 시안을 먼저 표시
+  if (window.innerWidth <= 768) {
+    const mobileBtn = document.querySelectorAll('.preview-tab')[1];
+    if (mobileBtn) setMode('mobile', mobileBtn);
+  }
+</script>
+</body>
+</html>
