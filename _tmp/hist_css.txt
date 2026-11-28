@@ -121,15 +121,15 @@
 @media(max-width:900px){.w .ob.ld{grid-template-columns:1fr}}.w .ob.ld p:first-child{color:var(--tx)}
 @media(max-width:560px){.w .bk img{max-width:230px}}
 .w .so:before{content:"";grid-column:1/-1;width:100%;max-width:900px;margin:0 auto;aspect-ratio:3/4;background:url("https://aibts24-ai.github.io/powernap/assets/2026-11/company-tech-solutions-12640.jpg") center/contain no-repeat;border-radius:16px}
-.w .h4w{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.w .h4w{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start}
 .w .h4w>div{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px 24px 22px}
-.w .h4w>.wide{grid-column:1/-1}
+.w .h4w .co3{grid-column:1/-1}
 .w .h4w .sd{margin:0 0 14px;font-size:16px}
 .w .h4w .sd i{font-style:normal;font-size:10.5px;letter-spacing:.14em;color:var(--gold);margin-left:7px;font-weight:700}
 .w .h4w .tl{grid-template-columns:1fr;gap:7px}
 .w .h4w .dk{background:var(--navy);border-color:var(--navy)}
 .w .h4w .dk .sd{color:#fff}
-.w .h4w .dk .tl li{color:rgba(255,255,255,.84)}
+.w .h4w .dk .tl li{color:#D7DFEA}
 .w .h4w .dk .tl b{color:#E7C87E}
 .w .h4w .stk li{flex-direction:column;gap:2px}
 .w .h4w .stk b{flex:none;color:var(--tx);font-size:14px;font-weight:800}
